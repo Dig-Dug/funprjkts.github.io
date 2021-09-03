@@ -4,7 +4,7 @@ function randomColor(){
     return Math.random();
 }
 
-const colors = ["maroon","deeppink","blueviolet","lightpink","chartreuse"];
+const colors = ["lightcoral","maroon","deeppink","blueviolet","lightpink","chartreuse","navy"];
 function changeColor() {
   
  // colors.forEach(colors => document.body.style.backgroundColor = colors);
