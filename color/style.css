@@ -1,4 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+
 #color{
+  font-family: 'Staatliches', cursive;
     color: aqua;
     margin: auto;
   width: 50%;
@@ -6,6 +9,7 @@
   padding: 10px;
 }
 #back{
+  font-family: 'Staatliches', cursive;
     color: rgb(255, 0, 0);
     margin: auto;
     margin-top: 18px;

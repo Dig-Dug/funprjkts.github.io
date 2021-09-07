@@ -1,4 +1,44 @@
-function randomColor(){
+
+//var randomnumber = Math.floor(Math.random() * (6 - 0 + 1)) + 0;
+
+const changeGradient= () => {
+ let i =   Math.floor(Math.random() * (255 - 0 + 1)) + 0;
+ let alpha =   Math.floor(Math.random() * (100 - 0 + 1)) + 0;
+ let rgb = "rgba";
+ let lg = "linear-gradient(";
+ let deg = "deg"
+ r = document.body.style.color = i;
+ g = document.body.style.color = i * 2;
+ b = document.body.style.color = i * 3;
+ a = document.body.style.color = alpha;
+
+ 
+ //linear-gradient(0deg, black, transparent)
+ //document.body.style.backgroundColor = rgb + "(" +(r+ " " + g + " "+ b )+ ")";
+ //document.body.style.background = lg + "(" + 0 + deg + " " + g + " "+ a  + ")"+ ";";
+ document.body.style.background = lg +  r + deg + " "  + "black"+ " " + r + ")";
+ document.body.style.backgroundColor = rgb + "(" +(r+ " " + g + " "+ b + " " + "/" + "" + a + "%" )+ ")";
+
+console.log(rgb + "(" +(r+ " " + g + " "+ b + " " + "/" + a + "%" )+ ")");
+console.log(lg +  r + deg + " "  + g+ " " + a + ")"); //linear-gradient(0 320 68)
+//linear-gradient(0deg, black, transparent)
+let txt = document.createElement("p");
+txt.innerText = rgb + "(" +(r+ " " + g + " "+ b + " " + "/" + a + "%" )+ ")";
+document.body.appendChild(txt);
+ //console.log(i);
+ // giveNumber(i);
+ //return i;
+}
+
+/*const giveNumber=() => {
+  let o =  "#" ;
+  console.log("fijrf", o );
+ document.body.style.backgroundColor = o;
+}*/
+
+
+
+/*function randomColor(){
     console.log(Math.random() + "   --  sth");
     document.getElementById("color").innerHTML = Math.random();
     return Math.random();
@@ -10,17 +50,10 @@ function changeGradient() {
  for(i = 0; i < 5; i++){
   
   document.body.style.backgroundColor = colors.shift(i += 5);
-  
- 
-  //console.log("-> " + colors[i]); 
+}  
+}*/
 
-  }  
-
-  //  console.log("dedww");
-    
-}
-
-function getFile(src, target){
+/*function getFile(src, target){
     var ifr = document.createElement('IFRAME');
     ifr.onload = function(e){
         //https://stackoverflow.com/questions/3875833/how-to-assign-file-contents-into-a-javascript-var
@@ -33,7 +66,7 @@ function getFile(src, target){
     ifr.style.display = 'none';
     document.body.appendChild(ifr);
 }
-getFile('gradient.json', document.getElementById('preview'));
+getFile('gradient.json', document.getElementById('preview'));*/
 
 
 
