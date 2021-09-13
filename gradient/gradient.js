@@ -12,23 +12,39 @@ const changeGradient= () => {
  b = document.body.style.color = i * 3;
  a = document.body.style.color = alpha;
 
- 
- //linear-gradient(0deg, black, transparent)
- //document.body.style.backgroundColor = rgb + "(" +(r+ " " + g + " "+ b )+ ")";
- //document.body.style.background = lg + "(" + 0 + deg + " " + g + " "+ a  + ")"+ ";";
- document.body.style.background = lg +  r + deg + " "  + "black"+ " " + r + ")";
- document.body.style.backgroundColor = rgb + "(" +(r+ " " + g + " "+ b + " " + "/" + "" + a + "%" )+ ")";
+ //linear-gradient(45deg, black, transparent);
 
-console.log(rgb + "(" +(r+ " " + g + " "+ b + " " + "/" + a + "%" )+ ")");
-console.log(lg +  r + deg + " "  + g+ " " + a + ")"); //linear-gradient(0 320 68)
-//linear-gradient(0deg, black, transparent)
+ //linear-gradient(360deg, rgb(0 255 31), transparent);
+
+ //document.body.style.backgroundColor = rgb + "(" +(r+ " " + g + " "+ b )+ ")";
+ //document.body.style.background = lg  + 360 + deg + ", " + "blue" + ", "+ "transparent"  + ")";
+ //document.body.style.background = lg  + 360 + deg + ", " + "rgb(" + r +" "+ g + " "+ b + ")" +"," + "transparent"  + ")";
+ document.body.style.background = lg  + 360 + deg + ", " + "rgb(" + r +" "+ g + " "+ b + ")" +"," + "#"  + r + ")";
+ //document.body.style.background = lg +  r + deg + " "  + "black"+ " " + r + ")";
+//document.body.style.backgroundColor = rgb + "(" +(r+ " " + g + " "+ b + " " + "/" + "" + a + "%" )+ ")";
+
+//console.log(rgb + "(" +(r+ " " + g + " "+ b + " " + "/" + a + "%" )+ ")");
+//console.log(lg +  r + deg + " "  + g+ " " + a + ")"); //linear-gradient(0 320 68)
+console.log(lg  + 360 + deg + ", " + "rgba(" + r +" "+ g + " "+ b + ")" +"," + r  + ")"); //linear-gradient(0 320 68)
+
 let txt = document.createElement("p");
 txt.innerText = rgb + "(" +(r+ " " + g + " "+ b + " " + "/" + a + "%" )+ ")";
-document.body.appendChild(txt);
+
+let o = 2;
+ document.body.appendChild(txt)
+let s;
+  if( o > 2){
+    console.log("remove")
+   let s = txt.removeChild("p");
+  
+}
+
  //console.log(i);
  // giveNumber(i);
  //return i;
 }
+
+
 
 /*const giveNumber=() => {
   let o =  "#" ;
