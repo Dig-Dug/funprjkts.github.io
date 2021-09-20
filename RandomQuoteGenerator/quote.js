@@ -57,25 +57,55 @@ async function parseURLParams(url = '', data = {}) {
       console.error('Error:', error);
     });
 } */
-let contacts ='{"result":true, "count":42}';
-  
-   
 
 
+function parseURLParams() {
 
-function parseURLParams(result) {
-    /* // Only change code below this line
-  for( var i =0; i < contacts.length -1; i++){
-      if(quote = contacts[i].hasOwnProperty("quote")){
-        let txt = document.createElement("p");
-        txt.innerText = JSON.parse([i]);
-        document.body.appendChild(txt)
      
-      } */
-      const obj = JSON.parse(contacts);
-      console.log(obj);
-       let txt = document.createElement("p");
-      txt.innerHTML  = obj;
-      document.body.appendChild(txt) 
+    /*  let json ={"items": [
+        {
+          "quote": "Life isn’t about getting and having, it’s about giving and being.",
+          "author": "Kevin Kruse"
+        },
+        {
+         "quote": "Whatever the mind of man can conceive and believe, it can achieve.",
+         "author": "Napoleon Hill"
+        },
+        {
+          "quote":"I attribute my success to this: I never gave or took any excuse.",
+          "author":"Florence Nightingale"}
+
+       ]};  */
+    let quotes ={"items": [
+
+      {
+             "quote":"Life isn’t about getting and having, it’s about giving and being.","author":"Kevin Kruse <---"},
+      {
+             "quote":"Whatever the mind of man can conceive and believe, it can achieve.","author":"Napoleon Hill"},
+      {
+             "quote":"Strive not to be a success, but rather to be of value.","author":"Albert Einstein"},
+      {
+             "quote":"Two roads diverged in a wood, and I—I took the one less traveled by, And that has made all the difference.","author":"Robert Frost"},
+      {
+             "quote":"I attribute my success to this: I never gave or took any excuse.","author":"Florence Nightingale"}
+      ]}
+     // let json = "quotes.json"
+    
+     let moth =   Math.random();
+       var news = document.getElementsByClassName("news-story")[0];
+            var items = quotes.items;
+            for(var i = 0; i < items.length; i++) {
+
+              
+
+              var h5 = document.createElement("h5");
+              h5.innerHTML = items[i  ].quote;
+              news.appendChild(h5 );
+              var p = document.createElement("p", moth);
+              p.innerHTML = items[i].author;
+              news.appendChild(p , moth );
+              
+          } 
+
   }
   /* console.log(contacts); */

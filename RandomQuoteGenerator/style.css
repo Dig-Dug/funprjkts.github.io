@@ -1,7 +1,9 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
 
-#color{
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab&display=swap');
+
+#news-story{
   font-family: 'Staatliches', cursive;
     color: aqua;
     margin: auto;
@@ -21,7 +23,22 @@
 h1{
   font-family: 'Staatliches', cursive;margin-left: 383px;
 }
+
+@keyframes flicker {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
 p{
+  /*animation: flicker 2s ease alternate infinite;*/
   font-family: 'Staatliches', cursive;
   margin-left: 426px;
+}
+h5 {
+  
+  margin-left: 345px;
+  font-family: 'Josefin Slab', serif;
 }

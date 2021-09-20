@@ -1,49 +1,40 @@
 
 //var randomnumber = Math.floor(Math.random() * (6 - 0 + 1)) + 0;
 
-const changeGradient= () => {
- let i =   Math.floor(Math.random() * (255 - 0 + 1)) + 0;
- let alpha =   Math.floor(Math.random() * (100 - 0 + 1)) + 0;
- let rgb = "rgba";
- let lg = "linear-gradient(";
- let deg = "deg"
- r = document.body.style.color = i;
- g = document.body.style.color = i * 2;
- b = document.body.style.color = i * 3;
- a = document.body.style.color = alpha;
+const changeGradient = () => {
+  let i = Math.floor(Math.random() * (255 - 0 + 1)) + 0;
+  let alpha = Math.floor(Math.random() * (100 - 0 + 1)) + 0;
+  let rgb = "rgba";
+  let lg = "linear-gradient(";
+  let deg = "deg"
+  r = document.body.style.color = i;
+  g = document.body.style.color = i * 2;
+  b = document.body.style.color = i * 3;
+  a = document.body.style.color = alpha;
 
- //linear-gradient(45deg, black, transparent);
+  document.body.style.background = lg + 360 + deg + ", " + "rgb(" + r + " " + g + " " + b + ")" + "," + "#" + r + ")";
 
- //linear-gradient(360deg, rgb(0 255 31), transparent);
+  console.log(lg + 360 + deg + ", " + "rgba(" + r + " " + g + " " + b + ")" + "," + r + ")"); //linear-gradient(0 320 68)
 
- //document.body.style.backgroundColor = rgb + "(" +(r+ " " + g + " "+ b )+ ")";
- //document.body.style.background = lg  + 360 + deg + ", " + "blue" + ", "+ "transparent"  + ")";
- //document.body.style.background = lg  + 360 + deg + ", " + "rgb(" + r +" "+ g + " "+ b + ")" +"," + "transparent"  + ")";
- document.body.style.background = lg  + 360 + deg + ", " + "rgb(" + r +" "+ g + " "+ b + ")" +"," + "#"  + r + ")";
- //document.body.style.background = lg +  r + deg + " "  + "black"+ " " + r + ")";
-//document.body.style.backgroundColor = rgb + "(" +(r+ " " + g + " "+ b + " " + "/" + "" + a + "%" )+ ")";
+  let txt = document.createElement("p");
+  txt.innerText = rgb + "(" + (r + " " + g + " " + b + " " + "/" + a + "%") + ")";
 
-//console.log(rgb + "(" +(r+ " " + g + " "+ b + " " + "/" + a + "%" )+ ")");
-//console.log(lg +  r + deg + " "  + g+ " " + a + ")"); //linear-gradient(0 320 68)
-console.log(lg  + 360 + deg + ", " + "rgba(" + r +" "+ g + " "+ b + ")" +"," + r  + ")"); //linear-gradient(0 320 68)
-
-let txt = document.createElement("p");
-txt.innerText = rgb + "(" +(r+ " " + g + " "+ b + " " + "/" + a + "%" )+ ")";
-
-let o = 1;
-document.body.appendChild(txt)
-
+  let o = 1;
+  document.body.appendChild(txt)
   
-  if( o > 1){
-    o--;
+removeIt();
+return txt;
+/*   if (o > 1) {
+    o++;
     console.log("remove")
     document.body.removeChild(txt);
-  
-}
+} */
 
- //console.log(i);
- // giveNumber(i);
- //return i;
+}
+function removeIt ( )  {
+ 
+ console.log("remove")
+ document.body.removeChild(txt);
 }
 
 
