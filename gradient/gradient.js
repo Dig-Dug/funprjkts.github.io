@@ -34,7 +34,7 @@ let o = 1;
 document.body.appendChild(txt)
 
   
-  if( o > 2){
+  if( o > 1){
     o--;
     console.log("remove")
     document.body.removeChild(txt);
