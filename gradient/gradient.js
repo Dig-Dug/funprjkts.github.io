@@ -30,12 +30,14 @@ console.log(lg  + 360 + deg + ", " + "rgba(" + r +" "+ g + " "+ b + ")" +"," + r
 let txt = document.createElement("p");
 txt.innerText = rgb + "(" +(r+ " " + g + " "+ b + " " + "/" + a + "%" )+ ")";
 
-let o = 2;
- document.body.appendChild(txt)
-let s;
+let o = 1;
+document.body.appendChild(txt)
+
+  
   if( o > 2){
+    o--;
     console.log("remove")
-   let s = txt.removeChild("p");
+    document.body.removeChild(txt);
   
 }
 

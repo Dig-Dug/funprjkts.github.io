@@ -1,0 +1,27 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+
+#color{
+  font-family: 'Staatliches', cursive;
+    color: aqua;
+    margin: auto;
+  width: 50%;
+  margin-left: 273px;
+  padding: 10px;
+}
+#back{
+  font-family: 'Staatliches', cursive;
+    color: rgb(255, 0, 0);
+    margin: auto;
+    margin-top: 18px;
+  width: 25%;
+  margin-left: 385px;
+  padding: 10px;
+}
+h1{
+  font-family: 'Staatliches', cursive;margin-left: 383px;
+}
+p{
+  font-family: 'Staatliches', cursive;
+  margin-left: 426px;
+}
