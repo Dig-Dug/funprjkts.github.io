@@ -91,7 +91,7 @@ function parseURLParams() {
       ]}
      // let json = "quotes.json"
     
-     let moth =   Math.random();
+   /*   let moth =   Math.random();
        var news = document.getElementsByClassName("news-story")[0];
             var items = quotes.items;
             for(var i = 0; i < items.length; i++) {
@@ -105,7 +105,60 @@ function parseURLParams() {
               p.innerHTML = items[i].author;
               news.appendChild(p , moth );
               
-          } 
+          }  */
+          console.log("lel");
+          var items = quotes.items;
+         
+          if(!document.getElementById("parent")){
+           for(var i = 0; i < items.length; i++) {
+            let quo = document.createElement("p");
+            let aut = document.createElement("h5");
+            quo.innerHTML = '<p id="parent" name = "parent">'+ items[i].quote+'</p>';
+            aut.innerHTML = '<h5 id="parent" name = "parent">'+ items[i].author +'</h5>';
+            console.log("this");
+            document.getElementById("new").appendChild(quo);
+            document.getElementById("new").appendChild(aut)
+          // document.getElementById("new").addEventListener("click", removing);
+  
+          const buttonElement = document.getElementById('news-story')
+          buttonElement.addEventListener('click', function () {
+           // parseURLParams();
+           // document.getElementById("new").innerHTML = Date();
+            console.log("ke pasa");
+           // var list = document.getElementById("new");
+            for(var i = 0; i < items.length; i--) {
+              console.log("minus");
+              //document.body.removeChild(quo.firstChild);
+            }
+            
+          });
+          }
+        }
+       }
+       function removing(){
+        console.log("ke pasa");
+        document.getElementById("new").innerHTML = Date();
+      
+      
+    }
 
-  }
-  /* console.log(contacts); */
+  
+  /* function myFunction() {
+    //check if text box with id "parent" exists, add if doesn't
+    if( !document.getElementById("parent") ) {
+        var span = document.createElement('SPAN');
+        span.innerHTML = '<input id="parent" name = "parent" type="textbox" />';
+        document.getElementById("DemoteContainer").appendChild(span);
+    }
+}
+
+<input onClick="myFunction();" id="demoteTask" name="demoteTask" type="checkbox"/>&nbsp;<label for"demoteTask_cbx">Demote to Child</label>
+
+<span id="DemoteContainer"></span>
+
+
+
+
+
+
+*/
