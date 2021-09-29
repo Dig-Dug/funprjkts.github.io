@@ -126,10 +126,10 @@ function parseURLParams() {
            // document.getElementById("new").innerHTML = Date();
             console.log("ke pasa");
            // var list = document.getElementById("new");
-            for(var i = 0; i < items.length; i--) {
+           /*  for(var i = 0; i < items.length; i--) {
               console.log("minus");
               //document.body.removeChild(quo.firstChild);
-            }
+            } */
             
           });
           }
