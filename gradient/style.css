@@ -1,11 +1,14 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
 
+body{
+  margin-top: 80px;margin-bottom: 800px;
+}
 #color{
   font-family: 'Staatliches', cursive;
     color: aqua;
     margin: auto;
-  width: 50%;
+  width: 224px;
   margin-left: 273px;
   padding: 10px;
 }
@@ -13,15 +16,22 @@
   font-family: 'Staatliches', cursive;
     color: rgb(255, 0, 0);
     margin: auto;
-    margin-top: 18px;
-  width: 25%;
-  margin-left: 385px;
+    margin-top: 60px;
+  width: 88px;
+  margin-left: 0px;
   padding: 10px;
 }
+#x {
+  margin-left: 486px;
+}
+
+
 h1{
-  font-family: 'Staatliches', cursive;margin-left: 383px;
+  font-family: 'Staatliches', cursive;margin-left: 323px;
+  color: #bac3c3;
 }
 p{
   font-family: 'Staatliches', cursive;
-  margin-left: 426px;
+  margin-left: 862px;
+  color: white;
 }

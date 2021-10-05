@@ -60,7 +60,7 @@ async function parseURLParams(url = '', data = {}) {
 
 
 function parseURLParams() {
-
+  
      
     /*  let json ={"items": [
         {
@@ -107,9 +107,14 @@ function parseURLParams() {
               
           }  */
           console.log("lel");
+          let moth =   Math.random();
           var items = quotes.items;
-         
+          //items += moth;
+        
           if(!document.getElementById("parent")){
+
+           
+
            for(var i = 0; i < items.length; i++) {
             let quo = document.createElement("p");
             let aut = document.createElement("h5");
@@ -124,24 +129,29 @@ function parseURLParams() {
           buttonElement.addEventListener('click', function () {
            // parseURLParams();
            // document.getElementById("new").innerHTML = Date();
-            console.log("ke pasa");
+            console.log("ke--pasa");
            // var list = document.getElementById("new");
            /*  for(var i = 0; i < items.length; i--) {
               console.log("minus");
               //document.body.removeChild(quo.firstChild);
             } */
-            
+          /*   document.getElementById("new");
+            document.body.removeChild(quo); */
+            let o = document.getElementById("new");
+            document.body.removeChild(o);
+           //o.parentNode.removeChild(o);
+         
+         //  addEventListener("click", removing);
           });
+         
+          
+          parseURLParams();
+
+         return;
           }
         }
        }
-       function removing(){
-        console.log("ke pasa");
-        document.getElementById("new").innerHTML = Date();
       
-      
-    }
-
   
   /* function myFunction() {
     //check if text box with id "parent" exists, add if doesn't

@@ -7,9 +7,9 @@ const changeGradient = () => {
   let rgb = "rgba";
   let lg = "linear-gradient(";
   let deg = "deg"
-  r = document.body.style.color = i;
-  g = document.body.style.color = i * 2;
-  b = document.body.style.color = i * 3;
+  r = document.body.style.color = i+1;
+  g = document.body.style.color = i;
+  b = document.body.style.color = i;
   a = document.body.style.color = alpha;
 
   document.body.style.background = lg + 360 + deg + ", " + "rgb(" + r + " " + g + " " + b + ")" + "," + "#" + r + ")";
@@ -19,22 +19,34 @@ const changeGradient = () => {
   let txt = document.createElement("p");
   txt.innerText = rgb + "(" + (r + " " + g + " " + b + " " + "/" + a + "%") + ")";
 
-  let o = 1;
+  
   document.body.appendChild(txt)
   
-removeIt();
-return txt;
+//removeIt();
+
+if(document.getElementById("new")){
+  const buttonElement = document.getElementById("color")
+  buttonElement.addEventListener('click', function () {
+    
+     console.log("ke--pasa");
+  
+     let o = document.getElementById("new");
+     document.body.removeChild(txt);
+     console.log("remove")
+    });
+
 /*   if (o > 1) {
     o++;
     console.log("remove")
     document.body.removeChild(txt);
 } */
-
+return
 }
+
 function removeIt ( )  {
  
- console.log("remove")
- document.body.removeChild(txt);
+  }
+ //return;
 }
 
 
