@@ -90,8 +90,13 @@ function parseURLParams() {
              "quote":"I attribute my success to this: I never gave or took any excuse.","author":"Florence Nightingale"}
       ]}
      // let json = "quotes.json"
-    
-   /*   let moth =   Math.random();
+
+
+
+   
+   
+   
+     /*   let moth =   Math.random();
        var news = document.getElementsByClassName("news-story")[0];
             var items = quotes.items;
             for(var i = 0; i < items.length; i++) {
@@ -113,16 +118,24 @@ function parseURLParams() {
         
           if(!document.getElementById("parent")){
 
-           
-
            for(var i = 0; i < items.length; i++) {
+    // checked  
+           // let dov = document.createElement("div");
             let quo = document.createElement("p");
             let aut = document.createElement("h5");
-            quo.innerHTML = '<p id="parent" name = "parent">'+ items[i].quote+'</p>';
+    //checked
+          // dov.innerHTML = '<div id="news-storyy"></div>';
+           /*  quo.innerHTML = '<p id="parent" name = "parent">'+ items[i].quote+'</p>';
+            aut.innerHTML = '<h5 id="parent" name = "parent">'+ items[i].author +'</h5>'; */
+            quo.innerHTML =  items[i].quote;
             aut.innerHTML = '<h5 id="parent" name = "parent">'+ items[i].author +'</h5>';
+           
+
             console.log("this");
-            document.getElementById("new").appendChild(quo);
-            document.getElementById("new").appendChild(aut)
+      // checked       
+      //  document.getElementById("news-storyy").appendChild(dov);
+        document.getElementById("new").appendChild(quo);
+        document.getElementById("new").appendChild(aut);
           // document.getElementById("new").addEventListener("click", removing);
   
           const buttonElement = document.getElementById('news-story')
@@ -137,17 +150,20 @@ function parseURLParams() {
             } */
           /*   document.getElementById("new");
             document.body.removeChild(quo); */
-            let o = document.getElementById("new");
+            let o = document.getElementById("news-storyy");
+           
             document.body.removeChild(o);
            //o.parentNode.removeChild(o);
-         
+           //parseURLParams();
+
+           //return;
          //  addEventListener("click", removing);
           });
          
           
           parseURLParams();
 
-         return;
+         return; 
           }
         }
        }
