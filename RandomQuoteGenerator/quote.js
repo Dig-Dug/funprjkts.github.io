@@ -79,16 +79,35 @@ function parseURLParams() {
     let quotes ={"items": [
 
       {
-             "quote":"Life isn’t about getting and having, it’s about giving and being.","author":"Kevin Kruse <---"},
+        "quote": "Life isn’t about getting and having, it’s about giving and being.", "author": "Kevin Kruse <---"
+      },
       {
-             "quote":"Whatever the mind of man can conceive and believe, it can achieve.","author":"Napoleon Hill"},
+        "quote": "Whatever the mind of man can conceive and believe, it can achieve.", "author": "Napoleon Hill"
+      },
       {
-             "quote":"Strive not to be a success, but rather to be of value.","author":"Albert Einstein"},
+        "quote": "Strive not to be a success, but rather to be of value.", "author": "Albert Einstein"
+      },
       {
-             "quote":"Two roads diverged in a wood, and I—I took the one less traveled by, And that has made all the difference.","author":"Robert Frost"},
+        "quote": "Two roads diverged in a wood, and I—I took the one less traveled by, And that has made all the difference.", "author": "Robert Frost"
+      },
       {
-             "quote":"I attribute my success to this: I never gave or took any excuse.","author":"Florence Nightingale"}
-      ]}
+        "quote": "I attribute my success to this: I never gave or took any excuse.", "author": "Florence Nightingale"
+      },
+      {
+        "quote": "You miss 100% of the shots you don’t take.", "author": "Wayne Gretzky"
+      },
+      {
+        "quote": "I’ve missed more than 9000 shots in my career. I’ve lost almost 300 games. 26 times I’ve been trusted to take the game winning shot and missed. I’ve failed over and over and over again in my life. And that is why I succeed.", "author": "Michael Jordan"
+      },
+      {
+        "quote": "The most difficult thing is the decision to act, the rest is merely tenacity.", "author": "Amelia Earhart"
+      },
+      {
+        "quote": "Every strike brings me closer to the next home run.", "author": "Babe Ruth"
+      }
+
+    ]
+    }
      // let json = "quotes.json"
 
 
@@ -112,7 +131,7 @@ function parseURLParams() {
               
           }  */
           console.log("lel");
-          let moth =   Math.random();
+          let moth =   Math.floor(Math.random() * 11);
           var items = quotes.items;
           //items += moth;
         
@@ -127,37 +146,41 @@ function parseURLParams() {
           // dov.innerHTML = '<div id="news-storyy"></div>';
            /*  quo.innerHTML = '<p id="parent" name = "parent">'+ items[i].quote+'</p>';
             aut.innerHTML = '<h5 id="parent" name = "parent">'+ items[i].author +'</h5>'; */
-            quo.innerHTML =  items[i].quote;
-            aut.innerHTML = '<h5 id="parent" name = "parent">'+ items[i].author +'</h5>';
+            //quo.innerHTML =  items[moth].quote;
+           quo.innerHTML = '<p id="parent" name = "parent"> '+ items[moth].quote+'</p>';
+            aut.innerHTML = '<h5 id="parent" name = "parent">'+ items[moth].author +'</h5>';
            
 
-            console.log("this");
+            console.log(items[moth].quote);
       // checked       
       //  document.getElementById("news-storyy").appendChild(dov);
         document.getElementById("new").appendChild(quo);
         document.getElementById("new").appendChild(aut);
           // document.getElementById("new").addEventListener("click", removing);
-  
+          
+          
           const buttonElement = document.getElementById('news-story')
           buttonElement.addEventListener('click', function () {
-           // parseURLParams();
-           // document.getElementById("new").innerHTML = Date();
+          
             console.log("ke--pasa");
-           // var list = document.getElementById("new");
-           /*  for(var i = 0; i < items.length; i--) {
-              console.log("minus");
-              //document.body.removeChild(quo.firstChild);
-            } */
+          
+          
           /*   document.getElementById("new");
             document.body.removeChild(quo); */
-            let o = document.getElementById("news-storyy");
-           
-            document.body.removeChild(o);
-           //o.parentNode.removeChild(o);
-           //parseURLParams();
-
-           //return;
-         //  addEventListener("click", removing);
+            let o = document.getElementById("new");
+            let d = document.getElementById("new");
+            
+            while(o.firstChild){
+              o.removeChild(o.firstChild);
+            }
+          //  let d1 = document.getElementById("neww");
+           // o.removeChild(d);
+          
+           // document.body.removeChild(o); <----
+          
+           parseURLParams()
+           return;
+        
           });
          
           
