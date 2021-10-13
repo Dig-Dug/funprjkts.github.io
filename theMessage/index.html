@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <LINK href="style.css" rel="stylesheet" type="text/css">
-  <!--  <script src="gradient.js" defer></script>-->
+  <script src="msg.js" defer></script>
 
    
    
@@ -16,12 +16,17 @@
    <h1>The Message</h1>
 
 <!--<button id="color" onClick="" >De-generate Gradient!!!!</button>-->
-<button id="back" onclick="document.location='../index.html'">back</button>
-</div>
-<div id="insert"></div>
-<div id="preview"></div>
-<p id="new"></p>
 
+<form onSubmit="messageIt(); return false;" >
+  <label for="fname">Enter the message</label>
+  <input type="text" id="fname" name="fname"><br><br>
+
+  <input  type="submit" value="Submit">
+</form>
+<div id="here" class="texta">
+
+</div>
+<button id="back" onclick="document.location='../index.html'">back</button>
 <!--<iframe src="gradient.json" height="200" width="300" title="Iframe Example"></iframe>-->
 </body>
 </html>

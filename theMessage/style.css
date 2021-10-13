@@ -32,6 +32,13 @@ h1{
 }
 p{
   font-family: 'Staatliches', cursive;
-  margin-left: 862px;
-  color: white;
+  margin-left: 0px;
+  color: rgb(0, 0, 0);
+}
+.texta {
+  
+  width: 474px;
+  height: 114px;
+  margin-top: 37px;
+
 }
