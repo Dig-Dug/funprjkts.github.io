@@ -1,6 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono&display=swap');
 body{
   margin-top: 80px;margin-bottom: 800px;
 }
@@ -24,6 +24,12 @@ body{
 #x {
   margin-left: 486px;
 }
+input {
+  font-family: 'Noto Sans Mono', monospace;
+}
+label {
+  font-family: 'Noto Sans Mono', monospace;
+}
 
 
 h1{
@@ -31,7 +37,7 @@ h1{
   color: #bac3c3;
 }
 p{
-  font-family: 'Staatliches', cursive;
+  font-family: 'Noto Sans Mono', monospace;
   margin-left: 0px;
   color: rgb(0, 0, 0);
 }
