@@ -31,7 +31,10 @@ label {
   font-family: 'Noto Sans Mono', monospace;
 }
 
-
+h2{
+  font-family: 'Staatliches', cursive;
+  font-size: 75px;
+}
 h1{
   font-family: 'Staatliches', cursive;margin-left: 323px;
   color: #bac3c3;
