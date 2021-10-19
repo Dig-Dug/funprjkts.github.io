@@ -1,0 +1,50 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono&display=swap');
+body{
+  margin-top: 80px;margin-bottom: 800px;
+}
+#color{
+  font-family: 'Staatliches', cursive;
+    color: aqua;
+    margin: auto;
+  width: 224px;
+  
+  padding: 10px;
+}
+#back{
+  font-family: 'Staatliches', cursive;
+    color: rgb(255, 0, 0);
+    margin: auto;
+    margin-top: 60px;
+  width: 88px;
+  margin-left: 0px;
+  padding: 10px;
+}
+#x {
+  margin-left: 486px;
+}
+input {
+  font-family: 'Noto Sans Mono', monospace;
+}
+label {
+  font-family: 'Noto Sans Mono', monospace;
+}
+
+
+h1{
+  font-family: 'Staatliches', cursive;margin-left: 323px;
+  color: #bac3c3;
+}
+p{
+  font-family: 'Noto Sans Mono', monospace;
+  margin-left: 0px;
+  color: rgb(0, 0, 0);
+}
+.texta {
+  
+  width: 474px;
+  height: 114px;
+  margin-top: 37px;
+
+}
