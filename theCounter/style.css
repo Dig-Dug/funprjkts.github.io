@@ -4,6 +4,7 @@
 body{
   margin-top: 80px;margin-bottom: 800px;
 }
+
 #in{
   font-family: 'Staatliches', cursive;
     color: aqua;
@@ -42,7 +43,7 @@ label {
 h2{
   font-family: 'Staatliches', cursive;
   font-size: 75px;
-  margin-left: -205px;
+  margin-left: 83px;
 }
 h1{
   font-family: 'Staatliches', cursive;margin-left: 323px;
