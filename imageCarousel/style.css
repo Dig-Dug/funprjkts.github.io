@@ -1,11 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono&display=swap');
 body {
+  background: black;
   margin-top: 80px;
   margin-bottom: 800px;
 }
 
 #back {
+  
   font-family: 'Staatliches', cursive;
   color: rgb(255, 0, 0);
   margin: auto;
@@ -23,7 +25,7 @@ h2 {
 
 h1 {
   font-family: 'Staatliches', cursive;
-  margin-left: 323px;
+  margin-left: 250px;
   color: #bac3c3;
 }
 
@@ -34,6 +36,11 @@ p {
 }
 
 .let {
+  display: hidden;
+ 
+}
+#lot{
+  display: inline;
   width: 600px;
 }
 
@@ -41,17 +48,30 @@ p {
   display: grid;
   grid-template-columns: 0fr 1fr 2fr;
   gap: 0px 11px;
+  grid-template-areas: 
+    ". . ."
+    ". . ."; 
 }
 
 .left {
+  cursor:pointer;
+  border-radius: 9px;
+  font-weight: bold;
+  font-size: 25px;
+  background: #ffdf00;
   width: 30px;
-  height: 25px;
+  height: 33px;
   margin-top: 400px;
   margin-right: 4px;
 }
 .right{
+  cursor:pointer;
+  border-radius: 9px;
+  font-weight: bold;
+  font-size: 25px;
+  background: #ffdf00;
   width: 30px;
-  height: 25px;
+  height: 33px;
   margin-top: 400px;
   margin-left: 4px;
 }
