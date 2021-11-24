@@ -34,12 +34,25 @@ p {
   margin-left: 0px;
   color: rgb(0, 0, 0);
 }
-
-.let {
-  display: hidden;
- 
+/* #grenz{
+  height: 200px;
+} */
+#mainImg{
+  display: inline;
+  width: 600px;
 }
-#lot{
+ .let {
+ visibility: visible;
+  width: 600px;
+ 
+} 
+ #lot{
+  visibility: visible;
+  display: inline;
+  width: 600px;
+} 
+#loot{
+  visibility: hidden;
   display: inline;
   width: 600px;
 }
