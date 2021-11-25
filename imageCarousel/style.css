@@ -4,6 +4,7 @@ body {
   background: black;
   margin-top: 80px;
   margin-bottom: 800px;
+  overflow-y: hidden;
 }
 
 #back {
@@ -11,9 +12,9 @@ body {
   font-family: 'Staatliches', cursive;
   color: rgb(255, 0, 0);
   margin: auto;
-  margin-top: 60px;
+  margin-top: 237px;
   width: 88px;
-  margin-left: 0px;
+  margin-left: 45px;
   padding: 10px;
 }
 
@@ -25,7 +26,7 @@ h2 {
 
 h1 {
   font-family: 'Staatliches', cursive;
-  margin-left: 250px;
+  margin-left:  186px;
   color: #bac3c3;
 }
 
@@ -34,9 +35,9 @@ p {
   margin-left: 0px;
   color: rgb(0, 0, 0);
 }
-/* #grenz{
+ #grenz{
   height: 200px;
-} */
+} 
 #mainImg{
   display: inline;
   width: 600px;
@@ -49,12 +50,12 @@ p {
  #lot{
   visibility: visible;
   display: inline;
-  width: 600px;
+  width: 489px;
 } 
 #loot{
-  visibility: hidden;
+  visibility: visible;
   display: inline;
-  width: 600px;
+  width: 489px;
 }
 
 .grod {
@@ -73,7 +74,7 @@ p {
   font-size: 25px;
   background: #ffdf00;
   width: 30px;
-  height: 33px;
+  height: 39px;
   margin-top: 400px;
   margin-right: 4px;
 }
@@ -84,7 +85,7 @@ p {
   font-size: 25px;
   background: #ffdf00;
   width: 30px;
-  height: 33px;
+  height: 39px;
   margin-top: 400px;
-  margin-left: 4px;
+  margin-left: 6px;
 }
