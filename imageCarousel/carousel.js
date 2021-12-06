@@ -1,4 +1,5 @@
-/* var imgArray = new Array();
+/* 
+var imgArray = new Array();
 
 imgArray[0] = new Image();
 imgArray[0].src = 'img/ACxDC-Powerviolence-696x464.jpg';
@@ -15,15 +16,58 @@ imgArray[5].src = 'img/tumblr_nefm9yko3H1qmyny3o1_1280.jpg';
 imgArray[6] = new Image();
 imgArray[6].src = 'img/V4HxMAckiNJegXyWvwa6JR.jpg';
 imgArray[7] = new Image();
-imgArray[7].src = 'img/bugs.jpg';
+imgArray[7].src = 'img/bugs.jpg'; */
 
 
-function toLeft(element){
+let arr = ["img/ACxDC-Powerviolence-696x464.jpg",
+"img/Hanin+Elias-1.jpg",
+"img/IanM0493u93u690u_465_546_int.jpg",
+"img/Incantation_1.jpg", "img/Incant.jpg",
+"img/tumblr_nefm9yko3H1qmyny3o1_1280.jpg",
+"img/V4HxMAckiNJegXyWvwa6JR.jpg", "img/bugs.jpg"];
+
+function toLeft(){
+
+  
+    for(let i = 0; i <= arr.length; i++){
+      console.log("ddpopdo", arr.length);
+     //arr.push(i)
+    // let orr = [];
+     
+     //orr.push(arr[i+1]);
+let pic = document.createElement('span');
+pic.innerHTML = '<img   id="lot" class=""  src=\"'+arr[i+1]+'\">';
+document.getElementById("mainImg").appendChild(pic);
+
+var elem = document.getElementById("test");
+     elem.parentNode.removeChild(elem);
+
+     document.getElementById("kl").style.backgroundColor = "blue";
+     //break
+      //toLeft();
+      return;
+    }
+ /*        var img = document.getElementById(element);
+    
+        for(var i = 0; i < imgArray.length;i++)
+        {
+            if(imgArray[i].src == img.src) 
+            {
+                if(i === imgArray.length){
+                    document.getElementById(element).src = imgArray[0].src;
+                   break;
+                }
+                document.getElementById(element).src = imgArray[i+1].src;
+            break;
+            }
+        } */
+} 
+function toRight(element){
 
     
         var img = document.getElementById(element);
     
-        for(var i = 0; i < imgArray.length;i++)
+        for(var i = 0; i <= imgArray.length;i++)
         {
             if(imgArray[i].src == img.src) 
             {
@@ -35,18 +79,13 @@ function toLeft(element){
               break;
             }
         }
-} */
-
-
+} 
 
 let i = 0;
+
+/* let i = 0;
 function toLeft(){
- /*        let im =  document.getElementById("loot");
-   im.style.visibility = "visible";
-   let om =  document.getElementById("lot");
-   om.style.visibility = "hidden"; */
- 
-  // let o = document.getElementById("loot").innerHTML;
+
     let arr = ["img/ACxDC-Powerviolence-696x464.jpg",
         "img/Hanin+Elias-1.jpg",
         "img/IanM0493u93u690u_465_546_int.jpg",
@@ -54,16 +93,15 @@ function toLeft(){
         "img/tumblr_nefm9yko3H1qmyny3o1_1280.jpg",
         "img/V4HxMAckiNJegXyWvwa6JR.jpg", "img/bugs.jpg"];
 i++;
-let o = document.getElementById("loot");
+
 let pic = document.createElement('div');
 pic.innerHTML = '<img   id="lot" class="let"  src=\"'+arr[i]+'\">';
 document.getElementById("grenz").appendChild(pic);
-/* let om =  document.getElementById("lot");
-om.style.visibility = "hidden"; */
+
 console.log( "yes", o)
 fade();
-while (o.firstChild) {
-    o.removeChild(o.firstChild);
+while (pic.firstChild) {
+    pic.removeChild(pic.firstChild);
    
   }
   toLeft();
@@ -111,4 +149,4 @@ function messageIt() {
         console.log("kkk")
       })
       return;
-    }}
+    }} */
