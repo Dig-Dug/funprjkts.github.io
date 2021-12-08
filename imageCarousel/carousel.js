@@ -28,7 +28,7 @@ let arr = ["img/ACxDC-Powerviolence-696x464.jpg",
 
 function toLeft(){
 
-  
+ //try with the adding subs prjkt 
     for(let i = 0; i <= arr.length; i++){
       console.log("ddpopdo", arr.length);
      //arr.push(i)

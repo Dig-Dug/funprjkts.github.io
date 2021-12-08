@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono&display=swap');
+body {
+  background: rgb(2,0,36);
+background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(125,214,244,1) 28%, rgba(199,215,101,1) 65%, rgba(214,142,212,0.8888888888888888) 75%, rgba(0,212,255,1) 100%);
+  margin-top: 80px;
+  margin-bottom: 800px;
+ /* overflow-y: hidden;*/
+}
+
+#back {
+  background: rgb(255, 255, 255);
+  font-family: 'Staatliches', cursive;
+  color: rgb(0, 0, 0);
+  margin: auto;
+  margin-top: 237px;
+  width: 88px;
+  border: none;
+  margin-left: 45px;
+  padding: 10px;
+}
+
+h2 {
+  font-family: 'Staatliches', cursive;
+  font-size: 75px;
+  margin-left: 83px;
+  width: 831px;
+  height: 78px;
+  letter-spacing: 5px;
+}
+
+h1 {
+  font-family: 'Staatliches', cursive;
+  margin-left:  186px;
+  color: #000000;
+}
+
+p {
+  font-family: 'Noto Sans Mono', monospace;
+  margin-left: 0px;
+  color: rgb(0, 0, 0);
+}
+ #grenz{
+  height: 200px;
+} 
+#mainImg{
+  display: inline;
+  width: 600px;
+}
+ .let {
+ visibility: visible;
+  width: 600px;
+ 
+} 
+ #lot{
+  visibility: visible;
+  display: inline;
+  width: 489px;
+} 
+#loot{
+  visibility: visible;
+  display: inline;
+  width: 489px;
+}
+
+.grod {
+  display: grid;
+  grid-template-columns: 0fr 1fr 2fr;
+  gap: 0px 11px;
+  grid-template-areas: 
+    ". . ."
+    ". . ."; 
+}
+
+.left {
+  cursor:pointer;
+  border-radius: 9px;
+  font-weight: bold;
+  font-size: 25px;
+  background: #ffdf00;
+  width: 30px;
+  height: 39px;
+  margin-top: 400px;
+  margin-right: 4px;
+}
+.right{
+  cursor:pointer;
+  border-radius: 9px;
+  font-weight: bold;
+  font-size: 25px;
+  background: #ffdf00;
+  width: 30px;
+  height: 39px;
+  margin-top: 400px;
+  margin-left: 6px;
+}
+.dot {
+  height: 25px;
+  width: 25px;
+  background-color: #bbb;
+  border-radius: 50%;
+  color: #bbb;
+  display: inline-block;
+  margin-right: 7px;
+  margin-left: 7px;
+  margin-top: 15px;
+}
