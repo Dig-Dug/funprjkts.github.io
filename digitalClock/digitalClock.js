@@ -5,10 +5,10 @@ let output  = ""
     console.log(output);
 
    
-//new Intl.DateTimeFormat('de-DE', options).format(Xmas95);
+
 var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
 var today  = new Date();
- let hour = today.getHours();
+ 
 
 
 
@@ -21,17 +21,7 @@ console.log(today.toLocaleDateString("de-DE", options)); // 9/17/2016
     clock.innerHTML = '<h2 class="clock" \>'+ today.toLocaleDateString("de-DE", options); + '</h2>';
     document.getElementById("date").appendChild(clock);
     
- 
-   
-  /*   let m = today.getMinutes();
-    let s = today.getSeconds();
-    
-    document.getElementById('date').value += hour;
-    
-    let hourr = document.createElement('span');
-    hourr.innerHTML = '<p class="hour" \>'+ hour +":"+ m +":"+ s + '</p>';
-    document.getElementById("date").appendChild(hourr); */
-  
+
 
     startTime();
    
