@@ -13,10 +13,10 @@ background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(125,214,244,1) 28%, rg
   font-family: 'Staatliches', cursive;
   color: rgb(0, 0, 0);
   margin: auto;
-  margin-top: 237px;
   width: 88px;
   border: none;
-  margin-left: 45px;
+  margin-top: 16px;
+  margin-left: 83px;
   padding: 10px;
 }
 
@@ -26,7 +26,17 @@ h2 {
   margin-left: 83px;
   width: 831px;
   height: 78px;
+  padding-bottom: 14px;
   letter-spacing: 5px;
+}
+#clock{
+  font-family: 'Staatliches', cursive;
+  font-size: 75px;
+  margin-left: 83px;
+  margin-top: 159px;
+  -webkit-text-stroke: 2px black;
+  letter-spacing: 5px;
+  color: rgb(219, 255, 13);
 }
 
 h1 {
@@ -36,8 +46,10 @@ h1 {
 }
 
 p {
-  font-family: 'Noto Sans Mono', monospace;
-  margin-left: 0px;
+  font-family: 'Staatliches', cursive;
+  font-size: 75px;
+  margin-left: 83px;
+  margin-top: 108px;
   color: rgb(0, 0, 0);
 }
  #grenz{
