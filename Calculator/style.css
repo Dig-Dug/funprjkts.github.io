@@ -4,6 +4,7 @@ body {
  margin-top: 80px;
   margin-bottom: 800px;
  /* overflow-y: hidden;*/
+ background-color: bisque;
 }
 
 #back {
@@ -26,6 +27,9 @@ h2 {
   height: 78px;
   padding-bottom: 14px;
   letter-spacing: 5px;
+}
+#in{
+  border-radius: 8px;
 }
 .grud {
 
@@ -82,6 +86,7 @@ p {
   font-family: 'Staatliches', cursive;
   font-size: 21px;
   border: none;
+  border-radius: 5px;
 }
 .btn:hover{
   background-color: #a04fb481;

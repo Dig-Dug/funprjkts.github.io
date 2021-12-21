@@ -1,53 +1,46 @@
 const number = 0;
 
 let num = document.getElementById("in").value;
-/* 
-function perform(){
-   
-let num = document.getElementById("in").value;
-switch(num){
-        case "+"  : sum();
-       // console.log(num + num,"++");
-        break;
-        case "-": console.log("--");
-        break;
-        case "*": console.log("**");
-        break;
-        case "/": console.log("//");
-        break;
-        case "=": console.log(")#´##=");
-        break;
-        default: console.log("TODO");
-    }
-   
-    } */
-   
-   
-    function sum(){
-      let num1 = document.getElementById("in").value;
-      let num2 = document.getElementById("in").value;
-        
-        console.log(num1 + num2,"++")
-        return;
- /*  document.onclick = reset;
-   if(sum){
-        document.getElementById("erase").defaultValue = "0";
-        console.log("TOuuDO")
-       
-        return;
-    } */
-   /*  if(document.getElementById('sumo').onclick == "+"){
-      
-        console.log(num,"sssss")
-        reset();
-       
-       return false;
-    } */
-    //let num1 = document.getElementById("input").value;
-    
-    console.log(num , "www," )
 
-    //result()
+   
+
+function sum(){
+     const num = parseInt(document.getElementById("in").value);
+     const num1 = parseInt(document.getElementById("in").value);
+
+
+/** store input numbers
+const num1 = parseInt(prompt('Enter the first number '));
+const num2 = parseInt(prompt('Enter the second number '));
+const sum = num1 + num2;
+console.log(`The sum of ${num1} and ${num2} is ${sum}`); */
+
+
+
+     if(document.getElementById('sumo').onclick){
+       /*  
+
+        const b = document.getElementById('sumo');
+        b.addEventListener('click', function () {
+          console.log(num1 += num2 ,"++")
+        })
+        num2; */
+        
+        document.getElementById("in").value = "";
+        function plus(){
+            const sum = num + num1;
+            return sum;
+        }  
+        if(document.getElementById('equal').onclick){
+            
+            console.log( "wwwioi"); console.log(plus());
+           }
+       }
+     console.log(plus())
+      // const sum = num + num1;
+      //  console.log(`The sum of ${num} and ${num1} is ${sum}`);
+    
+     
 
 }  
 
@@ -55,7 +48,7 @@ function result(){
     console.log("TODO")
 }
 
-function reset(){
+/* function reset(){
     document.getElementById("erase").defaultValue = "0";
     console.log("TODO")
-}
+} */
