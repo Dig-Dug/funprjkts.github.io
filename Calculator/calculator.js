@@ -31,8 +31,9 @@ function del() {
 
 function sum(){
      const num = parseInt(document.getElementById("in").value);
-     const num1 = parseInt(document.getElementById("in").value);
-     
+    const num1 = parseInt(document.getElementById("in").value);
+ 
+    console.log(num1) 
 
 
 /** store input numbers
@@ -65,8 +66,8 @@ console.log(`The sum of ${num1} and ${num2} is ${sum}`); */
             console.log(sum)
             return sum;
            } 
-           console.log( "wwwioi"); 
-            console.log(plus());
+          
+           // console.log(plus());
        }
     // console.log(plus())
       // const sum = num + num1;

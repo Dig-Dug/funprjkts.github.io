@@ -5,9 +5,14 @@
   font-family: 'Staatliches', cursive;
     color: #380d7e;
     margin: auto;
-  width: 50%;
-  margin-left: 273px;
-  padding: 10px;
+    width: 19%;
+    margin-left: 8px;
+    margin-bottom: 10px;
+    padding: 7px;
+}
+#color:hover{
+  background-color: #380d7e;
+  color: #ffffff;
 }
 #back{
   font-family: 'Staatliches', cursive;
