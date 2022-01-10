@@ -32,8 +32,8 @@ function del() {
 function sum(){
      const num = parseInt(document.getElementById("in").value);
     const num1 = parseInt(document.getElementById("in").value);
- 
-    console.log(num1) 
+    num.innerHTML = 'Resumosults: ' + (num + num1);
+    console.log(num + num1) 
 
 
 /** store input numbers
@@ -45,35 +45,24 @@ console.log(`The sum of ${num1} and ${num2} is ${sum}`); */
 
 
      if(document.getElementById('sumo').onclick){
-       /*  
-
-        const b = document.getElementById('sumo');
-        b.addEventListener('click', function () {
-          console.log(num1 += num2 ,"++")
-        })
-        num2; */
-        
-        document.getElementById("in").value = "";
-       /*  function plus(){
-            const sum = num + num1;
-            return sum;
-        }    */
+      console.log("waaaa")
+      const num1 = parseInt(document.getElementById("in").value);
+      reset();
+      /*   document.getElementById("in").value = "";
+     
         if(document.getElementById('equal').onclick){
            function plus(){
             var sum = document.getElementById("in");
-           //Work this!!!
+     
              sum.value = num + num1;
             console.log(sum)
             return sum;
            } 
           
-           // console.log(plus());
-       }
-    // console.log(plus())
-      // const sum = num + num1;
-      //  console.log(`The sum of ${num} and ${num1} is ${sum}`);
-    
-      }
+            console.log(plus());
+       } */
+       console.log(num1) 
+      } 
 
 }  
 
@@ -89,5 +78,34 @@ function showResult(sum){
  function reset(){
     document.getElementById("erase").defaultValue = "0";
    // del();
-    console.log("TODO")
+    console.log("reset")
 } 
+
+var results = document.getElementById('results');
+
+function operations(value) {
+  var numero_1 = parseInt(document.getElementById('num1').value);
+  var numero_2 = parseInt(document.getElementById('num2').value);
+  if (!isNaN(numero_1) && !isNaN(numero_2)) {
+    switch (value) {
+      case 'Sumar':
+        results.innerHTML = 'Results: ' + (numero_1 + numero_2);
+        break;
+      case 'Restar':
+        results.innerHTML = 'Results: ' + (numero_1 - numero_2);
+        break;
+      case 'Multiplicar':
+        results.innerHTML = 'Results: ' + (numero_1 * numero_2);
+        break;
+      case 'Dividir':
+        results.innerHTML = 'Results: ' + (numero_1 / numero_2);
+        break;
+    }
+    var final = document.getElementById('results').textContent;
+    console.log(final)
+  } else {
+    results.innerHTML = 'Please enter value to calculate'
+  }
+
+}
+
