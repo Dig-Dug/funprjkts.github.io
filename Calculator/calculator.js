@@ -20,20 +20,16 @@ function input(e) {
 }
 function del() {
   var inn = document.getElementById("in");
-  inn.value = inn.value.substr(0, inn.value.length - 1);
+  inn.value = inn.value.substr(0, inn.value= "0");
+  
 
-  var sum = document.getElementById("sumo");
-  sum.value = sum.value.substr(0, sum.value.length - 1);
-
-  var less = document.getElementById("lesso");
-  less.value = less.value.substr(0, less.value.length - 1);
 }
 
 function sum(){
      const num = parseInt(document.getElementById("in").value);
-    const num1 = parseInt(document.getElementById("in").value);
-    num.innerHTML = 'Resumosults: ' + (num + num1);
-    console.log(num + num1) 
+    
+    //num.innerHTML = 'Resumosults: ' + (num + num1);
+    //console.log(num + num1) 
 
 
 /** store input numbers
@@ -45,9 +41,11 @@ console.log(`The sum of ${num1} and ${num2} is ${sum}`); */
 
 
      if(document.getElementById('sumo').onclick){
-      console.log("waaaa")
       const num1 = parseInt(document.getElementById("in").value);
-      reset();
+      console.log("waaaa",num + num1)
+      //const num1 = parseInt(document.getElementById("in").value);
+       del();
+       return num + num1;
       /*   document.getElementById("in").value = "";
      
         if(document.getElementById('equal').onclick){
@@ -75,9 +73,9 @@ function showResult(sum){
     return res
 }
 
- function reset(){
+ function reset(i){
     document.getElementById("erase").defaultValue = "0";
-   // del();
+  
     console.log("reset")
 } 
 
