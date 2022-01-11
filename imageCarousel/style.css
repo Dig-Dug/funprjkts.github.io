@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono&display=swap');
 body {
-  background: black;
+  background: #6ca5af8c;
   margin-top: 80px;
   margin-bottom: 800px;
  /* overflow-y: hidden;*/
@@ -9,11 +9,11 @@ body {
 
 #back {
   
-  margin-top: 28px;
+  margin-top: 24px;
 
   font-family: 'Staatliches', cursive;
-  color: rgb(255, 0, 0);
-  margin: auto;
+  color: rgb(255 141 0);
+ 
   
   width: 88px;
   margin-left: 45px;
@@ -29,7 +29,7 @@ h2 {
 h1 {
   font-family: 'Staatliches', cursive;
   margin-left:  186px;
-  color: #bac3c3;
+  color: #cd2f27;
 }
 
 p {
@@ -40,9 +40,17 @@ p {
 
 @import url(https://fonts.googleapis.com/css?family=Varela+Round);
 
-html, body { background: #333 url("https://codepen.io/images/classy_fabric.png"); }
+
 .prev{
-  top: 23px;
+  
+  top: 0px;
+  right: 643px;
+
+}
+label{
+  position: relative;
+  margin-top: 190px;
+
 }
 .slides {
     padding: 0;
@@ -91,32 +99,29 @@ html, body { background: #333 url("https://codepen.io/images/classy_fabric.png")
 
 .nav label {
   width: 104px;
-   
-   
     height: 100%;
     display: none;
     position: absolute;
-
-	  opacity: 0;
+    opacity: 0;
     z-index: 9;
     cursor: pointer;
-
     transition: opacity .2s;
-
-    color: #FFF;
-    font-size: 156pt;
+    color: white;
+    font-size: 88pt;
     text-align: center;
     line-height: 380px;
     font-family: "Varela Round", sans-serif;
-    background-color: rgba(255, 255, 255, .3);
-    text-shadow: 0px 0px 15px rgb(119, 119, 119);
+    background-color: none;
+    text-shadow: 0px 0px 15px rgb(255, 255, 255);
 }
 
 .slide:hover + .nav label { opacity: 0.5; }
 
 .nav label:hover { opacity: 1; }
 
-.nav .next { right: 0; }
+.nav .next { right: 0;
+  left: 643px;
+}
 
 input:checked + .slide-container  .slide {
     opacity: 1;
@@ -145,7 +150,7 @@ input:checked + .slide-container .nav label { display: block; }
 	position: relative;
 	border-radius: 100%;
 	display: inline-block;
-	background-color: rgba(0, 0, 0, 0.6);
+	background-color: rgb(86 154 203);
 }
 
 .nav-dots .nav-dot:hover {
@@ -159,5 +164,5 @@ input#img-3:checked ~ .nav-dots label#img-dot-3,
 input#img-4:checked ~ .nav-dots label#img-dot-4,
 input#img-5:checked ~ .nav-dots label#img-dot-5,
 input#img-6:checked ~ .nav-dots label#img-dot-6 {
-	background: rgba(0, 0, 0, 0.8);
+	background: rgba(255, 255, 255, 0.8);
 }
