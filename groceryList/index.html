@@ -14,21 +14,22 @@
 <body>
  
    <h1 >Grocery List</h1>
-<div class="list"> 
-  <img style="
-  width: 90px;
-  height: 53px;
-" src="rr.png"/>
-
-<input id="input" value="">
-<p id="log"></p>
-<button visibility="none" id="myBtn" onclick="addIt()">Button</button>
-
+<div class="container"> 
+ <div> <img style="width: 150px;height: 127px;" src="https://e7.pngegg.com/pngimages/865/372/png-clipart-black-and-gold-fountain-pen-fountain-pen-bic-ballpoint-pen-pencil-pen-ink-pens.png"/>
+       <input id="input" value="">
+       <button visibility="none" id="myBtn" onclick="addIt()">Button</button>
 </div>
 <div>
-    <button id="back" onclick="document.location='../index.html'">back</button>
-  
-  </div>
+  <p id="log"></p>
+</div>
+<div>
+  <button id="back" onclick="document.location='../index.html'">back</button>
+
+</div>
+
+
+</div>
+
 <script>
   const input = document.querySelector('input');
 const log = document.getElementById('log');

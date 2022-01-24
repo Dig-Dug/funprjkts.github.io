@@ -1,6 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
 
+body  {
+  background-image: url("https://m.media-amazon.com/images/M/MV5BZjg2ODUwZTgtODRkMS00N2U1LTg2Y2EtNDVhMjRmMDNkNDk3XkEyXkFqcGdeQWFybm8@._V1_.jpg");
+  background-repeat: no-repeat;
+}
 #MyInput input {
   font-family: inherit;
   outline: 0;
@@ -17,7 +22,7 @@
 }
 
 h2 {
-  font-family: 'Staatliches', cursive;
+  font-family: 'Raleway', sans-serif;
   font-size: 75px;
   margin-left: 83px;
   width: 831px;
@@ -25,27 +30,27 @@ h2 {
   padding-bottom: 14px;
   letter-spacing: 5px;
 }
-#clock{
-  font-family: 'Staatliches', cursive;
-  font-size: 75px;
-  margin-left: 83px;
-  margin-top: 159px;
-  -webkit-text-stroke: 2px black;
-  letter-spacing: 5px;
-  color: rgb(219, 255, 13);
+.container {
+  display: grid; 
+  grid-template-columns: 1fr; 
+  grid-template-rows: 1fr 1fr 1fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "."
+    "."
+    "."; 
 }
 
 h1 {
-  font-family: 'Staatliches', cursive;
+  font-family: 'Raleway', sans-serif;
   margin-left:  186px;
   color: #000000;
 }
 
 p {
-  font-family: 'Staatliches', cursive;
-  font-size: 75px;
-  margin-left: 83px;
-  margin-top: 108px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 22px;
+
   color: rgb(0, 0, 0);
 }
  #grenz{
