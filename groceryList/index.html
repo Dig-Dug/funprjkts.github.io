@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <LINK href="style.css" rel="stylesheet" type="text/css">
+  <script src="groceryList.js" defer></script>
+
+   
+   
+</head>
+<body>
+ 
+   <h1 >Grocery List</h1>
+<div class="list"> 
+  <img style="
+  width: 90px;
+  height: 53px;
+" src="rr.png"/>
+
+<input id="input" value="">
+<p id="log"></p>
+<button visibility="none" id="myBtn" onclick="addIt()">Button</button>
+
+</div>
+<div>
+    <button id="back" onclick="document.location='../index.html'">back</button>
+  
+  </div>
+<script>
+  const input = document.querySelector('input');
+const log = document.getElementById('log');
+
+input.addEventListener('keydown', logKey);
+
+function logKey(e) {
+  log.textContent += ` ${e.code}`;
+}
+</script>
+</body>
+</html>
