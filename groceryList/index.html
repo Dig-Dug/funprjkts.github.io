@@ -16,8 +16,8 @@
    <h1 >Grocery List</h1>
 <div class="container"> 
  <div> <img style="width: 150px;height: 127px;" src="https://e7.pngegg.com/pngimages/865/372/png-clipart-black-and-gold-fountain-pen-fountain-pen-bic-ballpoint-pen-pencil-pen-ink-pens.png"/>
-       <input id="input" value="">
-       <button visibility="none" id="myBtn" onclick="addIt()">Button</button>
+       <input name="fname" id="input" value="">
+       <button visibility="none" id="myBtn" onclick="logIt()">Button</button>
 </div>
 <div>
   <p id="log"></p>
@@ -31,14 +31,17 @@
 </div>
 
 <script>
-  const input = document.querySelector('input');
+
+//console.log(input)
+/*   const input = document.querySelector('input');
 const log = document.getElementById('log');
 
 input.addEventListener('keydown', logKey);
 
-function logKey(e) {
-  log.textContent += ` ${e.code}`;
-}
+function logKey(e) { 
+  //Template literals (Template strings)
+  log.textContent += ` ${e.code}`; //OTPCredential.code
+} */
 </script>
 </body>
 </html>
