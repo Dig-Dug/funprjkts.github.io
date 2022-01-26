@@ -15,9 +15,32 @@ function addIt() {
     let i = document.getElementById("input").value;
    console.log(i);
 let o = document.createElement("p");
-o.innerHTML = '<p>' + i + '</p>';
+//o.innerHTML = '<p id="newP">' + i + '</p>';
+o.innerHTML = i;
 document.getElementById("log").appendChild(o);
+
+if(o){
+  console.log("o");
+  let add = document.getElementById("log");
+add.addEventListener("click", reset, false);
+let newP = document.getElementById("log");
+newP.addEventListener("click", decorate, false);
+}
   }
+
+  function decorate(){ 
+    document.getElementById('log').style.textDecoration='line-through';
+   // document.getElementById('newP').style.textDecoration='line-through';
+  }
+  function reset(){
+   //document.getElementById("input").defaultValue = "0";
+  let od = document.getElementById("input").value = "";
+  
+  
+    console.log("reset")
+} 
+const birr = document.getElementById("input");
+birr.addEventListener("click", reset, false);
 
 /*     if (!document.getElementById("parent")) {
       let msg = document.createElement("p");
