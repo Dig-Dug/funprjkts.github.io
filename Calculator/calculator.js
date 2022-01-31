@@ -9,13 +9,14 @@ document.addEventListener("keypress", function(event) {
 
 function input(e) {
   var inn = document.getElementById("in");
-  inn.value = inn.value + e.value; 
-
-  var sum = document.getElementById("sumo");
+  console.log(inn)
+ inn.value = inn.value + e.value; 
+/* 
+  var sum = document.getElementById("sumo").value;
   sum.value = sum.value + e.value;
 
   var less = document.getElementById("lesso");
-  less.value = less.value + e.value;
+  less.value = less.value + e.value; */
 
 }
 function del() {
@@ -24,8 +25,11 @@ function del() {
   
 
 }
-
-function sum(){
+function sume(){
+  let od = document.getElementById("input").value = "";
+console.log("waaaa")
+}
+function sum1(){
      const num = parseInt(document.getElementById("in").value);
     
     //num.innerHTML = 'Resumosults: ' + (num + num1);
@@ -81,7 +85,7 @@ function showResult(sum){
 
 var results = document.getElementById('results');
 
-function operations(value) {
+/* function operations(value) {
   var numero_1 = parseInt(document.getElementById('num1').value);
   var numero_2 = parseInt(document.getElementById('num2').value);
   if (!isNaN(numero_1) && !isNaN(numero_2)) {
@@ -105,5 +109,5 @@ function operations(value) {
     results.innerHTML = 'Please enter value to calculate'
   }
 
-}
+} */
 

@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <LINK href="style.css" rel="stylesheet" type="text/css">
-<!--   <script src="calculator.js" defer></script> -->
-  <script src="c.js" defer></script>
+<script src="calculator.js" defer></script>
+  <!-- <script src="c.js" defer></script> -->
 
    
    
@@ -22,35 +22,35 @@
  
   <form>
    
-   <!--  <input type="text" id="in"value=""> -->
-   <input type="number" id="num1" required />
-   <input type="number" id="num2" required/>
+    <input type="text" id="in"value=""> 
+ <!--   <input type="number" id="num1" required />
+   <input type="number" id="num2" required/> -->
 <div id="grey"class="grud">
  
- <input type="button" class="btn" onclick="operations(value);" value="1">
- <input type="button" class="btn" onclick="input(this.value);" value="2">
- <input type="button" class="btn" onclick="input(this.value);" value="3">
-  <input class="btn" type="button" onclick="operations(this.value)" value="+" id="suma" /> 
- <input type="button" class="btn" onclick="input(this);" value="4">
- <input type="button" class="btn" onclick="input(this);" value="5">
- <input type="button" class="btn" onclick="input(this);" value="6">
-  <input class="btn" type="button" onclick="operations(this.value)" value="-" id="resta" /> 
- <input type="button" class="btn" onclick="input(this);" value="7">
- <input type="button" class="btn" onclick="input(this);" value="8">
- <input type="button" class="btn" onclick="input(this);" value="9">
-  <input class="btn" type="button" onclick="operations(this.value)" value="*" id="multiplicacion" />
- <input type="button" class="btn" onclick="input(this);" value=".">
- <input type="button" class="btn" onclick="input(this);" value="0"> 
+ <input id="in" type="button" class="btn" onclick="input(this);" value="1">
+ <input id="in" type="button" class="btn" onclick="input(this);" value="2">
+ <input id="in" type="button" class="btn" onclick="input(this);" value="3">
+  <input id="in"  class="btn" type="button" onclick="sume(this.value)" value="+" id="suma" /> 
+ <input id="in" type="button" class="btn" onclick="input(this);" value="4">
+ <input id="in" type="button" class="btn" onclick="input(this);" value="5">
+ <input id="in" type="button" class="btn" onclick="input(this);" value="6">
+  <input id="in" class="btn" type="button" onclick="(this.value)" value="-" id="resta" /> 
+ <input id="in" type="button" class="btn" onclick="input(this);" value="7">
+ <input id="in" type="button" class="btn" onclick="input(this);" value="8">
+ <input id="in" type="button" class="btn" onclick="input(this);" value="9">
+  <input id="in" class="btn" type="button" onclick="(this.value)" value="*" id="multiplicacion" />
+ <input id="in" type="button" class="btn" onclick="input(this);" value=".">
+ <input id="in" type="button" class="btn" onclick="input(this);" value="0"> 
  <button type="button" id="erase" class="btn" value="C" onclick="reset()">C</button> 
- <input class="btn" type="button" onclick="operations(this.value)" value="/" id="division" /> 
+ <input id="in" class="btn" type="button" onclick="(this.value)" value="/" id="division" /> 
 
 
 
 
 
 </div>
-<button onkeydown = "if (event.keyCode == 13)
-document.getElementById('in')"  type="button" id="results" class="btn" value="0"  onclick="showResult()">=</button> 
+<button id="in" onkeydown = "if (event.keyCode == 13)
+document.getElementById('in')"  type="button"  class="btn" value="0"  onclick="showResult()">=</button> 
 </form>
 
 </div>
