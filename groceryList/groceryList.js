@@ -10,7 +10,6 @@ function addIt() {
   });
   } */
 
-
   function logIt(){
     let i = document.getElementById("input").value;
    console.log(i);
@@ -29,15 +28,22 @@ newP.addEventListener("click", decorate, false);
   }
 
   function decorate(){ 
-    document.getElementById('log').style.textDecoration='line-through';
-   // document.getElementById('newP').style.textDecoration='line-through';
+   let r =   document.getElementById('log').style.textDecoration='line-through';
+   document.getElementById("log").addEventListener("click", noLine);
+   
+    return r;
   }
+  function noLine(){ //try jQuery
+//https://stackoverflow.com/questions/7563169/detect-which-word-has-been-clicked-on-within-a-text
+    console.log("clooook")
+    document.getElementById('log').style.textDecoration='none';
+  }
+ 
+
   function reset(){
    //document.getElementById("input").defaultValue = "0";
   let od = document.getElementById("input").value = "";
-  
-  
-    console.log("reset")
+  console.log("reset")
 } 
 const birr = document.getElementById("input");
 birr.addEventListener("click", reset, false);

@@ -6,10 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <LINK href="style.css" rel="stylesheet" type="text/css">
+     
   <script src="groceryList.js" defer></script>
-
-   
-   
+ 
 </head>
 <body>
  
@@ -20,7 +19,7 @@
        <button visibility="none" id="myBtn" onclick="logIt()">Add</button>
 </div>
 <div>
-  <p id="log"></p>
+  <p class="clickable" id="log"></p>
 </div>
 <div>
   <button id="back" onclick="document.location='../index.html'">back</button>
@@ -30,18 +29,6 @@
 
 </div>
 
-<script>
-
-//console.log(input)
-/*   const input = document.querySelector('input');
-const log = document.getElementById('log');
-
-input.addEventListener('keydown', logKey);
-
-function logKey(e) { 
-  //Template literals (Template strings)
-  log.textContent += ` ${e.code}`; //OTPCredential.code
-} */
 </script>
 </body>
 </html>
