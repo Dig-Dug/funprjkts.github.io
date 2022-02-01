@@ -85,4 +85,11 @@ function modifyText() {
   
   
   }
+
+  function erasePen(){
+  let r = document.getElementById("log");
+  //r.removeChild(r.childNodes[0]);
+  r.innerHTML = '';
+      console.log("eeeee", r) 
+}
   

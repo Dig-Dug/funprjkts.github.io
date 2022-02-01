@@ -9,8 +9,15 @@ document.addEventListener("keypress", function(event) {
 
 function input(e) {
   var inn = document.getElementById("in");
-  console.log(inn)
+ // console.log(inn)
  inn.value = inn.value + e.value; 
+ //return inn.value;
+const suma = document.getElementById("suma");
+
+suma.addEventListener("click", () => {
+  let od = document.getElementById("in").value = "";
+	console.log("clicked element", inn, od);
+});
 /* 
   var sum = document.getElementById("sumo").value;
   sum.value = sum.value + e.value;
@@ -25,10 +32,10 @@ function del() {
   
 
 }
-function sume(){
-  let od = document.getElementById("input").value = "";
-console.log("waaaa")
-}
+/* function sume(inn){
+ let od = document.getElementById("in").value = "";
+console.log(inn); 
+} */
 function sum1(){
      const num = parseInt(document.getElementById("in").value);
     
