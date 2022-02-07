@@ -8,7 +8,7 @@
     <LINK href="style.css" rel="stylesheet" type="text/css">
      
   <script src="groceryList.js" defer></script>
-  <script src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
 </head>
 <body>
  
@@ -29,6 +29,22 @@
 
 </div>
 
+
+<script>
+  $(function(){
+  var $curParent, Content;
+  $(document).delegate("p","click", function(){
+    if($(this).closest("s").length) {
+      Content = $(this).parent("s").html();
+      $curParent = $(this).closest("s");
+      $(Content).insertAfter($curParent);
+      $(this).closest("s").remove();
+    }
+    else {
+      $(this).wrapAll("<s />");
+    }
+  });
+});
 </script>
 
 </body>

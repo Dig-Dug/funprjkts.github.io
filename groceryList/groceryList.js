@@ -1,49 +1,44 @@
 
-/* 
-function addIt() {
-  var input = document.getElementById("myInput");
-  input.addEventListener("keydown", function(event) {
-    if (event.key === 'Enter') {
-     event.preventDefault();
-     document.getElementById("myBtn").click();
-    }
-  });
-  } */
 
+//https://www.educative.io/edpresso/how-to-add-an-id-to-element-in-javascript
   function logIt(){
     let i = document.getElementById("input").value;
    console.log(i);
 let o = document.createElement("p");
+o.setAttribute('id','cb');
+//o.setAttribute('class','under');
 //o.innerHTML = '<p id="newP">' + i + '</p>';
 o.innerHTML = i;
 document.getElementById("log").appendChild(o);
 
 if(o){
-  console.log("o");
+//  console.log("o");
   let add = document.getElementById("log");
 add.addEventListener("click", reset, false);
 let newP = document.getElementById("log");
-newP.addEventListener("click", decorate, false);
+//*******newP.addEventListener("click", decorate, false);
 }
   }
 
-  function decorate(){ 
-   let r =   document.getElementById('log').style.textDecoration='line-through';
-   document.getElementById("log").addEventListener("click", noLine);
-   
-    return r;
-  }
-  function noLine(){ //try jQuery
 //https://stackoverflow.com/questions/7563169/detect-which-word-has-been-clicked-on-within-a-text
-    console.log("clooook")
-    document.getElementById('log').style.textDecoration='none';
+  
+/* *****  function decorate(){ 
+   let r =   document.getElementById('log-1').style.textDecoration='line-through';
+   document.getElementById("log-1").addEventListener("click", noLine);
+   console.log(r)
+   
   }
+  function noLine(){ 
+
+    console.log("clooook")
+    document.getElementById('log-1').style.textDecoration='none';
+  } */
  
 
   function reset(){
    //document.getElementById("input").defaultValue = "0";
   let od = document.getElementById("input").value = "";
-  console.log("reset")
+ // console.log("reset", reset)
 } 
 const birr = document.getElementById("input");
 birr.addEventListener("click", reset, false);
@@ -82,7 +77,7 @@ function modifyText() {
   
       const buttonElement = document.getElementById('here');
       buttonElement.addEventListener('click', function () {
-        console.log("kkk")
+        console.log("ok")
       })
       return;
     };
@@ -93,7 +88,7 @@ function modifyText() {
   }
 
   function erasePen(){
-  let r = document.getElementById("log");
+  let r = document.getElementById("cb");
   //r.removeChild(r.childNodes[0]);
   r.innerHTML = '';
       console.log("eeeee", r) 
