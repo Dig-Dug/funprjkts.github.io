@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+
+body  {
+  /*background-image: url("https://pics.onsizzle.com/calculator-why-not-calcunow-quick-meme-com-8627547.png");*/
+  background-repeat: no-repeat;
+}
+
+
+#back {
+  background: rgb(255, 255, 255);
+  font-family: 'Staatliches', cursive;
+ 
+}
+.container {  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 2px 12px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    ". ."
+    ". ."
+    ". .";
+}
+
+.btnContainer {margin-top: 9px;
+  display: grid; 
+  grid-template-columns: 0fr 1fr; 
+  grid-template-rows: 1fr; 
+  gap: 2px 12px; 
+  grid-template-areas: 
+    ". ."; 
+}
+
+.centerr{
+  width: 189px;
+  border: solid;
+  padding-left: 9px;
+  padding-bottom: 9px;
+
+  padding-top: 9px;
+  margin-left: 196px;
+  margin-top: 48px;
+
+}
+.right{
+  position: relative;
+}
+#tv {
+  position: relative;
+  width: 189px;
+  border: solid;
+  background: white;
+  border-radius: 0% 0% 0% 0% / 0% 0% 0% 0% ;
+  color: black;
+  box-shadow: 20px 20px rgba(0,0,0,.15);
+  transition: all .4s ease;
+}
+#tv:hover {
+  border-radius: 0% 0% 50% 50% / 0% 0% 5% 5% ;
+  box-shadow: 10px 10px rgba(0,0,0,.25);
+}
+
+
+
+
+
+
+h2 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 75px;
+  margin-left: 83px;
+  width: 831px;
+  height: 78px;
+  padding-bottom: 14px;
+  letter-spacing: 5px;
+}
+.container {
+  display: grid; 
+  grid-template-columns: 1fr; 
+  grid-template-rows: 1fr 1fr 1fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "."
+    "."
+    "."; 
+}
+
+h1 {
+  font-family: 'Raleway', sans-serif;
+  margin-left:  186px;
+  color: #000000;
+}
+
+p {
+  font-family: 'Raleway', sans-serif;
+  font-size: 22px;
+
+  color: rgb(0, 0, 0);
+}
+ #grenz{
+  height: 200px;
+} 
+#mainImg{
+  display: inline;
+  width: 600px;
+}
