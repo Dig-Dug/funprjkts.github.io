@@ -7,7 +7,7 @@
     <title>Document</title>
     <LINK href="style.css" rel="stylesheet" type="text/css">
      
-  <script src="groceryList.js" defer></script>
+  <script src="tip.js" defer></script>
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
 </head>
 <body>
@@ -16,30 +16,30 @@
 <div id="tv"class="centerr">
    <div class="container">  
     <div >
-      <label>Bill Amount: $</label>
+      <label >Bill Amount: $</label>
     </div>
-    <div><input type="number"></input>
+    <div><input type="text" id="price"></input>
     </div>
     <div >
       <label>Tip Percent: %</label>
     </div>
-   <div><input type="number"></input>
+   <div><input type="text" id="prozent"></input>
     </div>
     <div >
       <label>Number of Persons:</label>
     </div>
-  <div><input type="number"></input>
+  <div><input type="text"></input>
     </div >
   </div>
   
   <div class="btnContainer">
-    <div class=""> <button class="btn">clear</button></div>
-    <div class="">  <button class="btn">calculate</button></div>
+    <div class=""> <button class="btn" type="submit" onClick="clearIt()">clear</button></div>
+    <div class="">  <button id="mero"class="btn" type="submit" onClick="calculate()">calculate</button></div>
   </div>
  
 
 
-<div style="border: solid;color: #000000;width: 170px;height: 55px;margin-top: 24px;margin-bottom: 37px;">
+<div id="res" style="border: solid;color: #000000;width: 170px;height: 55px;margin-top: 24px;margin-bottom: 37px;">
 <p style="
 
 font-size: revert;

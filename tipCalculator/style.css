@@ -23,7 +23,11 @@ body  {
     ". ."
     ". .";
 }
-
+#total{
+  margin-bottom: 21px;
+    margin-top: 0px;
+    margin-left: 5px;
+}
 .btnContainer {margin-top: 9px;
   display: grid; 
   grid-template-columns: 0fr 1fr; 
@@ -42,8 +46,10 @@ body  {
   padding-top: 9px;
   margin-left: 196px;
   margin-top: 48px;
-
+  
 }
+
+
 .right{
   position: relative;
 }
