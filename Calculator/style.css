@@ -24,6 +24,12 @@ textarea {
 
 #totall{
   background-color: bisque;
+  position: relative;
+    margin-top: 0px;
+    margin-bottom: 11px
+px
+;
+    bottom: 70px;
 }
 h2 {
   font-family: 'Staatliches', cursive;
