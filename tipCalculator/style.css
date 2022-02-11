@@ -9,9 +9,15 @@ body  {
 
 
 #back {
-  background: rgb(255, 255, 255);
+  background: rgb(255, 1, 1);
   font-family: 'Staatliches', cursive;
- 
+  color: rgb(255, 255, 255);
+  margin: auto;
+  width: 88px;
+  border: none;
+  margin-top: 120px;
+    margin-left: 278px;
+  padding: 10px;
 }
 .container {  display: grid;
   grid-template-columns: 1fr 1fr;
@@ -60,12 +66,12 @@ body  {
   background: white;
   border-radius: 0% 0% 0% 0% / 0% 0% 0% 0% ;
   color: black;
-  box-shadow: 20px 20px rgba(0,0,0,.15);
+  box-shadow: 20px 20px rgb(0, 0, 0);
   transition: all .4s ease;
 }
 #tv:hover {
   border-radius: 0% 0% 50% 50% / 0% 0% 5% 5% ;
-  box-shadow: 10px 10px rgba(0,0,0,.25);
+  box-shadow: 10px 10px rgb(0, 0, 0);
 }
 
 
