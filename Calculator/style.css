@@ -18,7 +18,9 @@ body {
     margin-left: 132px;
   padding: 10px;
 }
-
+textarea {
+  resize: none;
+}
 h2 {
   font-family: 'Staatliches', cursive;
   font-size: 75px;
