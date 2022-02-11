@@ -31,8 +31,12 @@
  <!-- <input id="in" type="button" class="btn" onclick="input(this);" value="1">
  <input id="in" type="button" class="btn" onclick="input(this);" value="2"> -->
 <!--  <input id="in" type="button" class="btn" onclick="input(this);" value="3"> -->
- 
-  <button id="suma" class="btn" type="submit" onClick="sume()">+</button>
+ <div class="btnsDiv">
+<div>  <button id="suma" class="btn" type="submit" onClick="sume()">+</button></div>
+<div>  <button id="rest" class="btn" type="submit" onClick="rest()">-</button> </div>
+<div>  <button id="mult" class="btn" type="submit" onClick="mult()">*</button></div>
+<div>  <button id="div" class="btn" type="submit" onClick="div()">/</button></div>
+</div>
 <!--  <input id="in" type="button" class="btn" onclick="input(this);" value="4">
  <input id="in" type="button" class="btn" onclick="input(this);" value="5">
  <input id="in" type="button" class="btn" onclick="input(this);" value="6">
@@ -51,11 +55,13 @@
 
 
 </div>
-<button id="in" onkeydown = "if (event.keyCode == 13)
+<!-- <button id="in" onkeydown = "if (event.keyCode == 13)
 document.getElementById('in')"  type="button"  class="btn" value="0"  onclick="showResult()">=</button> 
+ -->
+<!-- <textarea id="result"></textarea> -->
+<div id="totall"> 
 
-<textarea id="result"></textarea>
-
+</div>
 
 
 </div>

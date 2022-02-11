@@ -21,6 +21,10 @@ body {
 textarea {
   resize: none;
 }
+
+#totall{
+  background-color: bisque;
+}
 h2 {
   font-family: 'Staatliches', cursive;
   font-size: 75px;
@@ -100,11 +104,22 @@ p {
   border: none;
   margin-left: 13px;
 }
+.btnsDiv{
+  display: grid; 
+  grid-template-columns: 1fr 1fr; 
+  grid-template-rows: 1fr 1fr; 
+  gap: 3px 5px; 
+  grid-template-areas: 
+    ". ."
+    ". ."; 
+}
 .btn{
   font-family: 'Staatliches', cursive;
   font-size: 21px;
   border: none;
   border-radius: 5px;
+  width: 67px;
+  
 }
 .btn:hover{
   background-color: #a04fb481;
