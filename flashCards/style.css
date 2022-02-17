@@ -18,18 +18,24 @@ body {
     margin-left: 132px;
   padding: 10px;
 }
-textarea {
-  resize: none;
+.header{
+  display: grid;
+  grid-template-columns: 0fr 0fr 1fr;
+  gap: 28px 45px;
+  align-content: stretch;
+  justify-content: space-evenly;
+  align-items: start;
 }
 
-#totall{
-  background-color: bisque;
-  position: relative;
-    margin-top: 0px;
-    margin-bottom: 11px
-px
-;
-    bottom: 70px;
+#flashcards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: auto;
+  margin-top: 10px;
+  padding: 0px 10px;
 }
 h2 {
   font-family: 'Staatliches', cursive;
@@ -40,61 +46,17 @@ h2 {
   padding-bottom: 14px;
   letter-spacing: 5px;
 }
-#in{
-  border-radius: 8px;
-  margin-top: 17px;
-  margin-left: 13px;
-}
-#erase{
-  border-radius: 8px;
-  margin-top: 17px;
-  margin-left: 13px;
-}
-.grud {
 
-  height: 194px;
-    width: 601px;
-    margin-left: 15px;
-    margin-top: 15px;
-    border-bottom-width: 16px;
-    margin-bottom: 19px;
-    margin-right: 29px;
 
-  display: grid; 
-  grid-template-columns: 1fr 1fr 1fr 1fr; 
-  grid-template-rows: 2fr 2fr 2fr 2fr; 
-  gap: 18px 22px; 
-  grid-template-areas: 
-    ". . . ."
-    ". . . ."
-    ". . . ."
-    ". . . ."; 
-}
 
 h1 {
   font-family: 'Staatliches', cursive;
   margin-left:  186px;
   color: #000000;
+  position: relative;
+  bottom: 24px;
 }
 
-#border{
-  background-color: #788ae3 ;
-  height: 329px;width: 365px;
-  border-radius: 5px;
-  position: relative;
-  border-color: #000000;
-  margin-left: 129px;
-    margin-right: 118px;
-    margin-top: 40px;
-}
-#border:before  {
-  content: '';
-  position: absolute;
-  top: 0; right: 0;
-  border-top: 42px solid bisque;
-  border-left: 42px solid red;
-  width: 0;
-}
 
 p {
   font-family: 'Staatliches', cursive;
@@ -104,40 +66,16 @@ p {
   color: rgb(0, 0, 0);
 }
 
-#equal{
-  background-color: skyblue;
-  width: 588px;
-  border: none;
-  margin-left: 13px;
-}
-.btnsDiv{
-  display: grid; 
-  grid-template-columns: 1fr 1fr; 
-  grid-template-rows: 1fr 1fr; 
-  gap: 3px 5px; 
-  grid-template-areas: 
-    ". ."
-    ". ."; 
-}
+
 .btn{
   font-family: 'Staatliches', cursive;
-  font-size: 21px;
+  font-size: 21px;color: burlywood;
   border: none;
   border-radius: 5px;
-  width: 67px;
+  width: 123px;height: 38px;
   
 }
-.numbers {
-  display: grid; 
-  grid-template-columns: 1fr 1fr 1fr; 
-  grid-template-rows: 1fr 1fr 1fr 1fr; 
-  gap: 0px 0px; 
-  grid-template-areas: 
-    ". . ."
-    ". . ."
-    ". . ."
-    ". . ."; 
-}
+
 .numBtn{
   margin-bottom: 4px;
   border-radius: 5px;border: none;
@@ -148,7 +86,7 @@ p {
   background-color: #e28437da;
 }
 .btn:hover{
-  background-color: #e28437da;
+  background-color: black;
 }
 #equal:hover{
   background-color: #e28437da;
