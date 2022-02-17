@@ -47,7 +47,21 @@ h2 {
   letter-spacing: 5px;
 }
 
+.showCard{
+  position: relative;height: 200px;
+  margin: 20px;
+  background-color: aqua;border-radius: 25px;
 
+}
+.titel {
+  position: relative;
+  color: deeppink;bottom: 205px;
+  left: 93px;
+}
+.showCardInput {position: relative;
+  bottom: 201px;
+    left: 95px;
+}
 
 h1 {
   font-family: 'Staatliches', cursive;
@@ -56,7 +70,19 @@ h1 {
   position: relative;
   bottom: 24px;
 }
-
+.btn1{
+  position: relative; bottom: 160px;
+  left: -223px;
+  right: 19px;
+  font-family: 'Staatliches', cursive;
+  font-size: 18px;
+  color: #ff62b2;
+  border: none;
+  border-radius: 5px;
+  width: 106px;
+  height: 29px;
+  
+}
 
 p {
   font-family: 'Staatliches', cursive;
