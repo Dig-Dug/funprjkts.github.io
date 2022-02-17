@@ -22,8 +22,9 @@
  
 
    
-    <input type="text" id="num1"> 
+    <input name="num1" type="text" id="num1"> 
     <input type="text" id="num2"> 
+    <p id="numo"></p>
  
 <div id="grey"class="grud">
 
@@ -31,10 +32,11 @@
  <div >
  <!--  <button id="numT" class="numBtn" type="submit"  value="1">1</button>
   <input id="in" type="button" class="btn" onclick="input(this);" value="1"> -->
-  <input id="numT"class="numBtn" type="button" value="1"  onclick="input(this.value)" />
+ <!--  <input id="num1" class="numBtn"  value="1" type="tel"/> -->
+ <input id="numT" class="numBtn"  name="one" value="1" type="button" />
 </div>
  <div>
-  <input id="numT"class="numBtn"type="button" value="2"  onclick="input(this.value)">
+  <input id="numT"class="numBtn"type="button" value="2">
  </div>
  <div class="numBtn">
   <button id="numT"class="numBtn" type="submit">3</button>
@@ -69,13 +71,7 @@
  </div>
 
 <!--  
- <input id="in" type="button" class="btn" onclick="input(this);" value="2">
- <input id="in" type="button" class="btn" onclick="input(this);" value="3">
-  <input id="in"  class="btn" type="button" onclick="sume(this.value)" value="+" id="suma" /> 
-  <input   class="btn" type="button"  value="+" id="suma" /> 
- <input id="in" type="button" class="btn" onclick="input(this);" value="4">
- <input id="in" type="button" class="btn" onclick="input(this);" value="5">
- <input id="in" type="button" class="btn" onclick="input(this);" value="6"> -->
+https://stackoverflow.com/questions/50748153/basic-calculator-how-to-make-buttons-input-value-to-text-field -->
 
 
  </div>
@@ -88,7 +84,19 @@
 </div>
 
  
+ <script>
+ var buttons = document.querySelectorAll('input[type="button"');
+ var input = document.getElementById('num1');
+ 
 
+
+  for (var i = 0; i < buttons.length; i++) {
+   buttons[i].addEventListener('click', function() { 
+     input.value += this.value;
+   });
+ } console.log(input)
+
+</script> 
 
 
 

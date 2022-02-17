@@ -1,18 +1,23 @@
-function input(e) {
- /*  var inn = document.getElementById("numT"); */
+/* function input() {
+   var inn = document.getElementById("numT");
   
   const num = parseInt(document.getElementById("numT").value);
 
-  //let i = parseInt(inn)
-  console.log(num)
 
 
-}
+
+} */
 
 function sume() {
   let num1 = document.getElementById('num1').value;
   let num2 = document.getElementById('num2').value;
-  
+
+/*    let w1a = document.getElementById('numT').value;
+  let w1 = parseInt(w1a);
+  console.log(w1a); */
+ 
+
+
   let b = parseInt(num1);
   let w = parseInt(num2);
 
