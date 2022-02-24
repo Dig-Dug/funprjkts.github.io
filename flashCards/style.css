@@ -1,10 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro&display=swap');
+
 body {
- margin-top: 80px;
+  margin-top: 80px;
+  background-image: url("https://wallpapercave.com/wp/wp2095045.jpg");
+  background-repeat: no-repeat;
+  background-size: 3000px 1000px;
   margin-bottom: 800px;
- /* overflow-y: hidden;*/
- background-color: bisque;
+  /* overflow-y: hidden;*/
+  background-color: bisque;
 }
 
 #back {
@@ -15,10 +20,11 @@ body {
   width: 88px;
   border: none;
   margin-top: 67px;
-    margin-left: 132px;
+  margin-left: 132px;
   padding: 10px;
 }
-.header{
+
+.header {
   display: grid;
   grid-template-columns: 0fr 0fr 1fr;
   gap: 28px 45px;
@@ -28,7 +34,7 @@ body {
 }
 
 #flashcards {
-  display: flex;
+  /*  display: flex; */
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
@@ -37,6 +43,7 @@ body {
   margin-top: 10px;
   padding: 0px 10px;
 }
+
 h2 {
   font-family: 'Staatliches', cursive;
   font-size: 75px;
@@ -47,31 +54,40 @@ h2 {
   letter-spacing: 5px;
 }
 
-.showCard{
-  position: relative;height: 200px;
+.showCard {
+  position: relative;
+  height: 200px;
   margin: 20px;
-  background-color: aqua;border-radius: 25px;
+  width: 646px;
+  background-color: #e9ff00;
+  border-radius: 25px;
 
 }
+
 .titel {
   position: relative;
-  color: deeppink;bottom: 205px;
+  color: deeppink;
+  bottom: 205px;
   left: 93px;
 }
-.showCardInput {position: relative;
+
+.showCardInput {
+  position: relative;
   bottom: 201px;
-    left: 95px;
+  left: 95px;
 }
 
 h1 {
   font-family: 'Staatliches', cursive;
-  margin-left:  186px;
+  margin-left: 186px;
   color: #000000;
   position: relative;
   bottom: 24px;
 }
-.btn1{
-  position: relative; bottom: 160px;
+
+.btn1 {
+  position: relative;
+  bottom: 160px;
   left: -223px;
   right: 19px;
   font-family: 'Staatliches', cursive;
@@ -81,43 +97,75 @@ h1 {
   border-radius: 5px;
   width: 106px;
   height: 29px;
-  
+
 }
 
 p {
   font-family: 'Staatliches', cursive;
   font-size: 21px;
   margin-top: 0px;
-    margin-left: 0px;
+  margin-left: 0px;
   color: rgb(0, 0, 0);
 }
 
 
-.btn{
+.btn {
   font-family: 'Staatliches', cursive;
-  font-size: 21px;color: burlywood;
+  font-size: 21px;
+  color: burlywood;
   border: none;
   border-radius: 5px;
-  width: 123px;height: 38px;
-  
+  width: 123px;
+  height: 38px;
+
 }
 
-.numBtn{
+.numBtn {
   margin-bottom: 4px;
-  border-radius: 5px;border: none;
+  border-radius: 5px;
+  border: none;
   width: 39px;
   height: 27px;
 }
-.numBtn:hover{
+
+.numBtn:hover {
   background-color: #e28437da;
 }
-.btn:hover{
+
+.btn:hover {
   background-color: black;
 }
-#equal:hover{
+
+#equal:hover {
   background-color: #e28437da;
 }
 
 
+/*////////////////////////////////////////////////////**/
+#questionRev {
+  position: relative;
+  font-family: 'Staatliches', cursive;
+  color: rgb(0, 0, 0);
+  bottom: 173px;
+  left: 38px;
+}
 
+#flashRev {
+  position: relative;
+  height: 200px;
+  width: 262px;
+  margin: 20px;
+  background-color: rgb(237 56 56 / 37%);
+  border-radius: 25px;
+}
 
+#answerRev {
+  position: relative;
+  font-family: 'Staatliches', cursive;
+  color: white;
+  bottom: 181px;
+  font-family: 'Source Serif Pro', serif;
+  font-size: 17px;
+  left: 38px;
+
+}
