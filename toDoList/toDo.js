@@ -15,20 +15,25 @@ function addIt(){
 
     let div = document.createElement("div");
     div.setAttribute('class', 'paper');
+    div.setAttribute('id', 'paper');
     //div.setAttribute('id', 'paper');
 
 
     let p = document.createElement("p");
     p.setAttribute('class','writing');
+    p.setAttribute('id','writing');
     p.textContent = z;
+    
     let check = document.createElement("input");
     check.setAttribute('type','checkbox');
     check.setAttribute('class','checkbox');
+    check.setAttribute('id','checkbox');
 
 
 
     let i = document.createElement("i"); //icon
      i.setAttribute('class', 'fas fa-trash');
+     i.setAttribute('id', 'fas fa-trash');
      i.setAttribute('onClick', 'deleteThis()');
 
 
@@ -44,7 +49,14 @@ console.log("oioioio")
 }
 
 function deleteThis(){
-    let u = document.getElementById('content');
-    u.innerHTML = '';
+    let u = document.getElementById('paper');
+    let o = document.getElementById('writing');
+    let i = document.getElementById('checkbox');
+    let a = document.getElementById('fas fa-trash');
+   // u.innerHTML = '';
+   u.remove();
+   o.remove();
+   i.remove();
+   a.remove();
     console.log("§poiopiopiopi")
 }
