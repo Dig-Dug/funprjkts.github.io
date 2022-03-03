@@ -1,6 +1,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
 
+
+body {
+ background-image: url("https://images.wallpapersden.com/image/download/alien-minimalism_amxqbmiUmZqaraWkpJRmbmdlrWZlbWU.jpg");
+ }
 #color{
   font-family: 'Staatliches', cursive;
     color: #380d7e;
