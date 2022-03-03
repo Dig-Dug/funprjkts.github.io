@@ -3,7 +3,8 @@
 
 
 body {
- background-image: url("https://images.wallpapersden.com/image/download/alien-minimalism_amxqbmiUmZqaraWkpJRmbmdlrWZlbWU.jpg");
+/* background-image: url("https://images.wallpapersden.com/image/download/alien-minimalism_amxqbmiUmZqaraWkpJRmbmdlrWZlbWU.jpg");*/
+background-image: url("tt.jpg");
  }
 #color{
   font-family: 'Staatliches', cursive;
@@ -15,7 +16,7 @@ body {
     padding: 7px;
 }
 #color:hover{
-  background-color: #380d7e;
+  background-color: #ff2d08;
   color: #ffffff;
 }
 #back{
@@ -29,6 +30,7 @@ body {
 }
 h1{
   font-family: 'Staatliches', cursive;
+  color: chocolate;
 }
 p{
   font-family: 'Staatliches', cursive;
