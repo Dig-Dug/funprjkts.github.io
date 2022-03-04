@@ -47,14 +47,51 @@ body {
 }
 .need1:hover{
   background-color: white;
-  
+}
+.need2{position: relative;right: 6px;
+  font-family: 'Pieces';   
+  top: 96px;
+  left: 36px;
+  width: 99px;
+  height: 39px;
+  background-color: #817676;
+  border: 1px solid lightgray;
+  border-radius: 5px;
 }
 #sticky1{
-  background-color: rgba(106, 109, 103, 0.507);
-  position: relative;left: 325px;
-  width: 233px;
-  height: 128px;
+  width: 276px;
+  height: 276px;
+  padding: 25px;
+  outline: none;
+  resize: none;
+  font-size: 1.5rem;
+  font-family: inherit;
+  box-shadow: 0px 2px 4px 0px rgb(0 0 0 / 90%);
 }
+
+
+.far fa-times-circle{
+  font-size: 1.4rem;
+  color: gray;
+  cursor: pointer;
+  position: relative;
+  margin-top: -285px;
+  margin-left: -35px;
+  transition: 1s ease-in-out;
+}
+#close{
+  position: relative;right: 289px;
+  bottom: 150px;
+}
+#dork{
+  position: fixed;
+    z-index: 1;
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+
 #sticky{
   background-color: rgb(114, 253, 0);
   width: 233px;
@@ -80,10 +117,20 @@ i{
 }
 
 #content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh;
+}
+.content2{
+  background-color: rgb(114, 253, 0);
+  width: 233px;
+  height: 128px;
+  
   display: grid; 
   grid-template-columns: 1fr 1fr 1fr; 
   grid-template-rows: 1fr 1fr 1fr; 
-  gap: 38px 0px; 
+  gap: 0px 0px; 
   grid-template-areas: 
     ". . ."
     ". . ."
