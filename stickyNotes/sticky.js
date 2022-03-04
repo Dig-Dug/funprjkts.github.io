@@ -1,4 +1,4 @@
-window.onload = function() {
+/* window.onload = function () {
 
     let i = document.createElement("i");
     i.setAttribute('class','far fa-times-circle');
@@ -11,8 +11,28 @@ window.onload = function() {
     txt.setAttribute('onkeypress','process(event, this)');
     txt.textContent= "note....";
 
-//document.body.style.backgroundColor = "red";
-//document.getElementById("dork").style.backgroundColor = "lightblue"; 
+
+
+    document.getElementById("content").appendChild(txt);
+    document.getElementById("content").appendChild(i);
+
+    document.getElementById("need1").setAttribute('class', 'need2');
+    document.getElementById("need1").disabled = true;
+} */
+window.onload=not();
+function not(){ //TODO
+    let i = document.createElement("i");
+    i.setAttribute('class','far fa-times-circle');
+    i.setAttribute('id','close');
+    i.setAttribute('onClick','quit(this)');
+
+
+    let txt = document.createElement("textarea");
+    txt.setAttribute('id','sticky1');
+    txt.setAttribute('onkeypress','process(event, this)');
+    txt.setAttribute('placeholder','note....');
+    //txt.textContent= "note....";
+    
 
 
     document.getElementById("content").appendChild(txt);
@@ -31,14 +51,22 @@ function submit(){
 }
 
 function multiply(){
-    document.getElementById("need1").disabled = false;
+  //  document.getElementById("need1").disabled = false;
+    let o = document.getElementById("sticky1").value;
 
 let div = document.createElement("div");
 div.setAttribute('id','sticky');
+
+let txt = document.createElement('p');
+txt.setAttribute('id', 'texta');
+txt.textContent = o;
 //div.setAttribute('class','content2');
 
+
 document.getElementById("content").appendChild(div);
-    console.log("oioioioioi")
+document.getElementById("content").appendChild(txt);
+
+    console.log("oioioioioi",o)
 }
 
 function quit(){
@@ -62,7 +90,8 @@ console.log("oioioioioi")
 function process(e) {
     var code = (e.keyCode ? e.keyCode : e.which);
     if (code == 13) { //Enter keycode
-        
-        alert("Sending your Message : " + document.getElementById('sticky1').value);
+        multiply();
+       // quit();
+       // alert("Sending your Message : " + document.getElementById('sticky1').value);
     }
 }

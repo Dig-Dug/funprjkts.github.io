@@ -6,6 +6,10 @@
   font-family: 'Pieces';
   src: url(PiecesNfi-LrOn.ttf);
 }
+@font-face {
+  font-family: 'loco';
+  src: url(Needleteeth\ Spooky.ttf);
+}
 
 body {
   margin-top: 80px;
@@ -59,6 +63,7 @@ body {
   border-radius: 5px;
 }
 #sticky1{
+  position: sticky;
   width: 276px;
   height: 276px;
   padding: 25px;
@@ -84,7 +89,7 @@ body {
   bottom: 150px;
 }
 #dork{
-  position: fixed;
+  position: absolute;
     z-index: 1;
     width: 100%;
     min-height: 100vh;
@@ -96,7 +101,10 @@ body {
   background-color: rgb(114, 253, 0);
   width: 233px;
   height: 128px;
-}
+  margin-top: 25px;
+  padding: 0 15px;
+  font-size: 1.5rem;
+ }
 i{
   margin-left: 262px;
   margin-top: 6px;
@@ -123,10 +131,7 @@ i{
   min-height: 50vh;
 }
 .content2{
-  background-color: rgb(114, 253, 0);
-  width: 233px;
-  height: 128px;
-  
+ 
   display: grid; 
   grid-template-columns: 1fr 1fr 1fr; 
   grid-template-rows: 1fr 1fr 1fr; 
@@ -153,10 +158,15 @@ h1 {
 
 
 p {
-  font-family: 'Staatliches', cursive;
-  font-size: 21px;
+  font-family: 'loco';
+  font-size: 15px;
   margin-top: 0px;
   margin-left: 0px;
   color: rgb(0, 0, 0);
+}
+#texta{
+  position: relative; 
+  right: 227px;
+  bottom: 25px;
 }
 
