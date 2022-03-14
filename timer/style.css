@@ -27,8 +27,12 @@ body {
   color: #125176;
 
 }
-.chron{
-  color: aqua;
+.chrono{
+  font-size: 88px;
+  font-family: 'Pieces';
+  margin: unset;
+  color: #125176;
+
 }
 #gif{
   position: relative;
