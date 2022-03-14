@@ -4,7 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 @font-face {
   font-family: 'Pieces';
-  src: url(PiecesNfi-LrOn.ttf);
+  src: url(SHPinscher-Regular.otf);
 }
 @font-face {
   font-family: 'loco';
@@ -18,17 +18,19 @@ body {
   background-size: 1042px 842px;
   margin-bottom: 800px;
   /* overflow-y: hidden;*/
-  background-color: bisque;
+  
 }
 .frstTwo {
   display: grid; 
   grid-template-columns: 2fr 2fr; 
   gap: 0px 0px; 
 }
-#slimer{
+#gif{
   position: relative;
-  width: 91px;
-  height: 89px;left: 75px;
+  width: 291px;
+  height: 241px;
+  left: 1089px;
+
   top: 56px;
 }
 .need{
@@ -88,13 +90,13 @@ body {
   position: fixed;      right: 1120px;
   bottom: 706px;
 }
-#dork{
+/* #dork{
   position: absolute;
     z-index: 1;
     width: 100%;
     min-height: 100vh;
-    background-color: rgba(0, 0, 0, 0.5);
-}
+   
+} */
 
 
 #sticky{
@@ -150,11 +152,11 @@ i{
 h1 {
   font-size: 48px;
   font-family: 'Pieces';
-  margin-left: 186px;
+  margin: unset;
   color: #125176;
-  position: relative;
-  bottom: 60px;
-    left: 39px;
+ 
+ 
+  
 }
 
 

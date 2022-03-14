@@ -51,11 +51,24 @@ function submit(){
 }
 
 function multiply(){
+    /**color*/
+      let i = Math.floor(Math.random() * (255 - 0 + 1)) + 0;
+     let rgb = "rgb";
+     let rotate = "rotate";
+      r = document.body.style.color = i + 1;
+       g = document.body.style.color = i * i;
+       b = document.body.style.color = i  / (i * 1000);
+       
+   
   //  document.getElementById("need1").disabled = false;
-    let o = document.getElementById("sticky1").value;
-
+    
+  let o = document.getElementById("sticky1").value;
+   
 let div = document.createElement("div");
 div.setAttribute('id','sticky');
+
+div.style.background = rgb +  "(" + r + " " + g + " " + b + ")";
+div.style.transform = rotate  + "(" + g + "deg)";
 
 let txt = document.createElement('p');
 txt.setAttribute('id', 'texta');
