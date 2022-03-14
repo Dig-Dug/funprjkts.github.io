@@ -20,94 +20,25 @@ body {
   /* overflow-y: hidden;*/
   
 }
-.frstTwo {
-  display: grid; 
-  grid-template-columns: 2fr 2fr; 
-  gap: 0px 0px; 
+#chrono{
+  font-size: 88px;
+  font-family: 'Pieces';
+  margin: unset;
+  color: #125176;
+
 }
 #gif{
   position: relative;
   width: 291px;
   height: 241px;
-  left: 1089px;
-
-  top: 56px;
-}
-.need{
-  width: 241px;
-  height: 21px;
-  border: 1px solid lightgray;
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
-}
-.need1{
-  position: relative;right: 6px;
-  font-family: 'Pieces';   
-  top: 96px;
-  left: 36px;
-  width: 99px;
-  height: 39px;
-  background-color: #d52727;
-  border: 1px solid lightgray;
-  border-radius: 5px;
-}
-.need1:hover{
-  background-color: white;
-}
-.need2{position: relative;right: 6px;
-  font-family: 'Pieces';   
-  top: 96px;
-  left: 36px;
-  width: 99px;
-  height: 39px;
-  background-color: #817676;
-  border: 1px solid lightgray;
-  border-radius: 5px;
-}
-#sticky1{
-  position: fixed;
-  width: 276px;
-  height: 276px;
-  padding: 25px;
-  outline: none;
-  resize: none;
-  font-size: 1.5rem;
-  font-family: inherit;
-  box-shadow: 0px 2px 4px 0px rgb(0 0 0 / 90%);
+  left: 284px;
+  top: 149px;
 }
 
 
-.far fa-times-circle{
-  font-size: 1.4rem;
-  color: gray;
-  cursor: pointer;
-  position: relative;
-  margin-top: -285px;
-  margin-left: -35px;
-  transition: 1s ease-in-out;
-}
-#close{
-  position: fixed;      right: 1120px;
-  bottom: 706px;
-}
-/* #dork{
-  position: absolute;
-    z-index: 1;
-    width: 100%;
-    min-height: 100vh;
-   
-} */
 
 
-#sticky{
- /*  background-color: rgb(114, 253, 0); */
-  width: 381px;
-  height: 212px;
-  margin-top: 25px;
-  padding: 0 15px;
-  font-size: 1.5rem;
-  box-shadow: 0 9px 5px rgb(24 11 0 / 20%);
- }
+
 i{
   margin-left: 262px;
   margin-top: 6px;
@@ -167,9 +98,5 @@ p {
   margin-left: 0px;
   color: rgb(0, 0, 0);
 }
-#texta{
-  position: relative; 
-  right: 227px;
-  bottom: 25px;
-}
+
 
