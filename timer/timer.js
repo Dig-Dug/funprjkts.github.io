@@ -68,7 +68,7 @@ async function go(millis) {
 //second = document.getElementById("chrono");
 
 var minutes = Math.floor(millis / 60000);
-var seconds = ((millis % 60000) / 1000).toFixed(0);
+var seconds = (millis / 10).toFixed(0);
 var mill = ((millis % 600) / 100).toFixed(0);
 for (minutes = 0; ; minutes++ ) {
   
