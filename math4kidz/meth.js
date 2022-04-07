@@ -17,6 +17,8 @@ let n1 = num1.getAttribute("value");
 let n2 = num2.getAttribute("value");
 let result = parseInt(n1) + parseInt(n2);
 
+/* let z = parseInt(n1);
+let zz = parseInt(n2); */
 //
 let pa1 = document.getElementById('pa1');
     let pa2 = document.getElementById('pa2');
@@ -34,21 +36,26 @@ let pa1 = document.getElementById('pa1');
 }
 
 let tor = add();
+/* let tst = tor[1];
+let tst1 = tor[2]; */
 console.log(tor, "TOR");
 
-function test(){
-p = pa1; 
+
+function test(p){
+p = parseInt(pa1);
 q = pa2; 
 r = pa3;  
 //io = tor
-
-  if(document.getElementById('pa3') === tor) {
+console.log(p,q,r, tor)
+//document.getElementById('pa3') == tor ? console.log(tor): console.log("false");
+}
+/*   if(document.getElementById('pa3') === tor) {
     console.log("Yertzrztrssi",tor);
     add(); return;
   } else{
       console.log("ddddd")
   }
-}
+} */
 //io = tor;
 
 //p + q  /* = io  ? add()  : nope() */
