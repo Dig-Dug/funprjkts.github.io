@@ -29,14 +29,43 @@ let pa1 = document.getElementById('pa1');
     pa3.innerHTML = result; // test variable
     pa3.setAttribute("onclick", "test()");
 
-    console.log("hier-->", num1, num2, result);
+    console.log("hier-->"/* num1, num2, result*/);
     return result;
 }
 
 let tor = add();
 console.log(tor, "TOR");
 
-function test(io){
+function test(){
+p = pa1; 
+q = pa2; 
+r = pa3;  
+//io = tor
+
+  if(document.getElementById('pa3') === tor) {
+    console.log("Yertzrztrssi",tor);
+    add(); return;
+  } else{
+      console.log("ddddd")
+  }
+}
+//io = tor;
+
+//p + q  /* = io  ? add()  : nope() */
+  //  console.log(p,q,r,io,"<----Wot???")
+//}
+
+function nope(){
+    //disable 
+}
+
+
+/* let msg = document.createElement("p");
+msg.innerHTML = '<p id="parent" name = "parent"> ' + fname.value + '</p>';
+document.getElementById("here").appendChild(msg); */ 
+
+
+/**function test(io){
 p = pa1; 
 q = pa2; 
 r = pa3; 
@@ -47,15 +76,4 @@ if(document.getElementById('p3') == io){
 
 io = tor;
 
-p + q  /* = io  ? add()  : nope() */
-    console.log(p,q,r,io,"<----Wot???")
-}
-
-function nope(){
-    //disable 
-}
-
-
-/* let msg = document.createElement("p");
-msg.innerHTML = '<p id="parent" name = "parent"> ' + fname.value + '</p>';
-document.getElementById("here").appendChild(msg); */ 
+}**/
