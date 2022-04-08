@@ -5,49 +5,105 @@ function add(){
     let num2 = document.getElementById('operand2');
 
 
-sign.innerHTML = '+'
+
 
 //https://www.educative.io/edpresso/how-to-generate-a-random-number-between-a-range-in-javascript
-
+sign.innerHTML = '+';
 num1.setAttribute("value", num1.innerHTML = Math.floor(Math.random() * 20));
 num2.setAttribute("value",num2.innerHTML = Math.floor(Math.random() * 20));
-//
+
 
 let n1 = num1.getAttribute("value");
 let n2 = num2.getAttribute("value");
+let res = parseInt(n1) + parseInt(n2)
+console.log(res)
+
+let a = document.createElement("h2");
+a.setAttribute("id", "pa1"); a.setAttribute("value", a.innerHTML = Math.floor(Math.random() * 20));
+a.setAttribute("onclick", "test()");
+
+let b = document.createElement("h2");
+b.setAttribute("id", "pa2"); b.setAttribute("value", b.innerHTML = Math.floor(Math.random() * 20));
+b.setAttribute("onclick", "test()");
+
+let c = document.createElement("h2");
+c.setAttribute("onclick", "yes()");
+c.setAttribute("id", "pa3"); c.setAttribute("value", c.innerHTML = res );
+
+
+ 
+// console.log(a.innerHTML,b,c)
+ o = document.getElementById("pa"); 
+ if(a.innerHTML > 0 && a.innerHTML < 10){
+     o.append(c,a,b) ;
+    } else if(a.innerHTML > 10){
+     console.log("a.innerHTML > 10")
+    o.append(b,a,c) ;
+ }else{o.append(b,c,a)}
+
+return[a,b,c]
+
+/* let n1 = num1.getAttribute("value");
+let n2 = num2.getAttribute("value");
 let result = parseInt(n1) + parseInt(n2);
 
-/* let z = parseInt(n1);
-let zz = parseInt(n2); */
-//
-let pa1 = document.getElementById('pa1');
+
+
+    let pa1 = document.getElementById('pa1');
     let pa2 = document.getElementById('pa2');
     let pa3 = document.getElementById('pa3');
 
-    pa1.innerHTML = Math.floor(Math.random() * 20);
+    pa1.setAttribute("value", pa1.innerHTML = Math.floor(Math.random() * 20));
     pa1.setAttribute("onclick", "test()");
-    pa2.innerHTML = Math.floor(Math.random() * 20);
+
+    pa2.setAttribute("value", pa2.innerHTML = Math.floor(Math.random() * 20));
     pa2.setAttribute("onclick", "test()");
-    pa3.innerHTML = result; // test variable
+    
+    pa3.innerHTML = result; 
     pa3.setAttribute("onclick", "test()");
 
-    console.log("hier-->"/* num1, num2, result*/);
-    return result;
+    console.log("hier-->");
+    let z = pa1.getAttribute("value");
+    let zz = pa2.getAttribute("value"); 
+    return [result,parseInt(z),parseInt(zz)]; */
 }
 
 let tor = add();
-/* let tst = tor[1];
-let tst1 = tor[2]; */
-console.log(tor, "TOR");
+/* let tst = tor[0];
+let tst1 = tor[1];
+let tst2 = tor[2];  */
+/*console.log(tor, "TOR", tst,tst1,tst2);  */
+ 
+function yes(){
+    console.log("yes");
+    const el = document.getElementById('pa1'); 
+    const ell = document.getElementById('pa2'); 
+    const elll = document.getElementById('pa3'); 
 
+    
+    el.remove();
+    ell.remove();
+    elll.remove();
+    add();
+    const imgo = document.getElementById("nope");
+    if(imgo){
+    imgo.remove();}
+    //return e// add();return
+}
 
-function test(p){
-p = parseInt(pa1);
-q = pa2; 
-r = pa3;  
+function test(){
+/* p = tst;
+q = tst1; 
+r = tst2;   */
 //io = tor
-console.log(p,q,r, tor)
-//document.getElementById('pa3') == tor ? console.log(tor): console.log("false");
+//console.log(a,b,c)
+let r = document.createElement("img");
+r.setAttribute("id", "nope");
+r.src = 'nop.gif';
+document.getElementById('pa').appendChild(r);
+console.log("No");
+    return;
+  
 }
 /*   if(document.getElementById('pa3') === tor) {
     console.log("Yertzrztrssi",tor);
