@@ -20,11 +20,11 @@ console.log(res)
 
 let a = document.createElement("h2");
 a.setAttribute("id", "pa1"); a.setAttribute("value", a.innerHTML = Math.floor(Math.random() * 20));
-a.setAttribute("onclick", "test()");
+a.setAttribute("onclick", "no(this)");
 
 let b = document.createElement("h2");
 b.setAttribute("id", "pa2"); b.setAttribute("value", b.innerHTML = Math.floor(Math.random() * 20));
-b.setAttribute("onclick", "test()");
+b.setAttribute("onclick", "no(this)");
 
 let c = document.createElement("h2");
 c.setAttribute("onclick", "yes()");
@@ -80,7 +80,10 @@ function yes(){
     const ell = document.getElementById('pa2'); 
     const elll = document.getElementById('pa3'); 
 
-    
+    let correct = document.createElement("audio");
+    correct.src   = 'correct.mp3';
+    correct.play();
+
     el.remove();
     ell.remove();
     elll.remove();
@@ -88,22 +91,33 @@ function yes(){
     const imgo = document.getElementById("nope");
     if(imgo){
     imgo.remove();}
-    //return e// add();return
+
+    return;
 }
 
-function test(){
-/* p = tst;
-q = tst1; 
-r = tst2;   */
-//io = tor
-//console.log(a,b,c)
+function no(elem){
+
 let r = document.createElement("img");
 r.setAttribute("id", "nope");
 r.src = 'nop.gif';
 document.getElementById('pa').appendChild(r);
 console.log("No");
-    return;
-  
+
+let error = document.createElement("audio");
+error.src   = 'error.mp3';
+
+
+if (elem.id == "pa3") {
+    r.remove(); 
+    console.log("eeeeeeeeeeeeeeeeee");
+}else if (elem.id == "pa1") {
+    console.log("eeeeeeeeeeeeeeeeee");
+    r.remove(); error.play();
+}else if (elem.id == "pa2") { 
+    r.remove();error.play();
+    return
+}
+
 }
 /*   if(document.getElementById('pa3') === tor) {
     console.log("Yertzrztrssi",tor);
