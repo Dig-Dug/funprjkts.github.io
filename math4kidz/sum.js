@@ -30,45 +30,25 @@ let c = document.createElement("h2");
 c.setAttribute("onclick", "yes()");
 c.setAttribute("id", "pa3"); c.setAttribute("value", c.innerHTML = res );
 
-
- 
-// console.log(a.innerHTML,b,c)
  o = document.getElementById("pa"); 
  if(a.innerHTML > 0 && a.innerHTML < 10){
      o.append(c,a,b) ;
     } else if(a.innerHTML > 10){
      console.log("a.innerHTML > 10")
     o.append(b,a,c) ;
- }else{o.append(b,c,a)}
+ }//TODO when same result.......
+  else{o.append(b,c,a)}
 
 return[a,b,c]
 
-/* let n1 = num1.getAttribute("value");
-let n2 = num2.getAttribute("value");
-let result = parseInt(n1) + parseInt(n2);
-
-
-
-    let pa1 = document.getElementById('pa1');
-    let pa2 = document.getElementById('pa2');
-    let pa3 = document.getElementById('pa3');
-
-    pa1.setAttribute("value", pa1.innerHTML = Math.floor(Math.random() * 20));
-    pa1.setAttribute("onclick", "test()");
-
-    pa2.setAttribute("value", pa2.innerHTML = Math.floor(Math.random() * 20));
-    pa2.setAttribute("onclick", "test()");
-    
-    pa3.innerHTML = result; 
-    pa3.setAttribute("onclick", "test()");
-
-    console.log("hier-->");
-    let z = pa1.getAttribute("value");
-    let zz = pa2.getAttribute("value"); 
-    return [result,parseInt(z),parseInt(zz)]; */
 }
 
 let tor = add();
+document.getElementById("sum").onclick = function() {
+    //disable
+    this.disabled = true;
+  //do some validation stuff
+}
 /* let tst = tor[0];
 let tst1 = tor[1];
 let tst2 = tor[2];  */
