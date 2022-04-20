@@ -16,10 +16,21 @@ let n2 = num2.getAttribute("value");
 let res = parseInt(n1) - parseInt(n2)
 console.log(res);
 
+let a = document.createElement("h2");
+a.setAttribute("id", "pa1"); a.setAttribute("value", a.innerHTML = Math.floor(Math.random() * 20));
+a.setAttribute("onclick", "no(this)");
+o = document.getElementById("pa"); 
+o.append(a)
 
 }
+
+
+
+
 document.getElementById("sum").addEventListener("click", returnSum);
 function returnSum() {
+  let a = document.getElementById('pa1');
+  a.remove();
     add();
   }
  

@@ -86,7 +86,7 @@ console.log("No");
 let error = document.createElement("audio");
 error.src   = 'error.mp3';
 
-
+//https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_image_shake
 if (elem.id == "pa3") {
     r.remove(); 
     console.log("eeeeeeeeeeeeeeeeee");
@@ -99,6 +99,11 @@ if (elem.id == "pa3") {
 }
 
 }
+
+document.getElementById("subs").addEventListener("click", returnSubs);
+function returnSubs() {
+    subs();
+  }
 /*   if(document.getElementById('pa3') === tor) {
     console.log("Yertzrztrssi",tor);
     add(); return;
