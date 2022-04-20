@@ -42,17 +42,9 @@ c.setAttribute("id", "pa3"); c.setAttribute("value", c.innerHTML = res );
 return[a,b,c]
 
 }
-
 let tor = add();
-document.getElementById("sum").onclick = function() {
-    //disable
-    this.disabled = true;
-  //do some validation stuff
-}
-/* let tst = tor[0];
-let tst1 = tor[1];
-let tst2 = tor[2];  */
-/*console.log(tor, "TOR", tst,tst1,tst2);  */
+
+
  
 function yes(){
     console.log("yes");
@@ -100,42 +92,27 @@ if (elem.id == "pa3") {
 
 }
 
+//https://stackoverflow.com/questions/17114825/how-to-disable-button-after-one-click-with-validation-using-javascript
+/* document.getElementById("sum").onclick = function() {
+
+    console.log("mmmmmmmmmmmmmmm")
+   this.disabled = true;
+  
+
+} */
+
 document.getElementById("subs").addEventListener("click", returnSubs);
 function returnSubs() {
     subs();
   }
-/*   if(document.getElementById('pa3') === tor) {
-    console.log("Yertzrztrssi",tor);
-    add(); return;
-  } else{
-      console.log("ddddd")
-  }
-} */
-//io = tor;
 
-//p + q  /* = io  ? add()  : nope() */
-  //  console.log(p,q,r,io,"<----Wot???")
-//}
 
-function nope(){
-    //disable 
-}
+
+
+
 
 
 /* let msg = document.createElement("p");
 msg.innerHTML = '<p id="parent" name = "parent"> ' + fname.value + '</p>';
 document.getElementById("here").appendChild(msg); */ 
 
-
-/**function test(io){
-p = pa1; 
-q = pa2; 
-r = pa3; 
-if(document.getElementById('p3') == io){
-    console.log("Yessi");
-    add();
-}
-
-io = tor;
-
-}**/

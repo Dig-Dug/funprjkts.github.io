@@ -1,5 +1,6 @@
 
 function subs(){
+  /* let r = document.getElementById("pa3"); r.remove(); */
   let  removeSum = document.getElementById("pa");
   removeSum.textContent = '';  
 
@@ -19,11 +20,43 @@ console.log(res);
 let a = document.createElement("h2");
 a.setAttribute("id", "pa1"); a.setAttribute("value", a.innerHTML = Math.floor(Math.random() * 20));
 a.setAttribute("onclick", "no(this)");
-o = document.getElementById("pa"); 
-o.append(a)
+o = document.getElementById("pa");
 
+let b = document.createElement("h2");
+b.setAttribute("id", "pa2"); b.setAttribute("value", b.innerHTML = Math.floor(Math.random() * 20));
+b.setAttribute("onclick", "no(this)");
+
+let c = document.createElement("h2");
+c.setAttribute("onclick", "yess()");
+c.setAttribute("id", "pa3"); c.setAttribute("value", c.innerHTML = res );
+
+o = document.getElementById("pa"); 
+if(a.innerHTML > 0 && a.innerHTML < 10){
+    o.append(c,a,b) ;
+   } else if(a.innerHTML > 10){
+    console.log("a.innerHTML > 10")
+   o.append(b,a,c) ;
+}//TODO when same result.......
+ else{o.append(b,c,a)}
+
+return[a,b,c]
 }
 
+function yess(){
+  console.log("yes");
+   const el = document.getElementById('pa1'); 
+
+  const elll = document.getElementById('pa3'); 
+
+  let correct = document.createElement("audio");
+  correct.src   = 'correct.mp3';
+  correct.play();
+
+  el.remove();
+  elll.remove();
+  subs();
+
+}
 
 
 
