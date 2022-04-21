@@ -42,7 +42,7 @@ c.setAttribute("id", "pa3"); c.setAttribute("value", c.innerHTML = res );
 return[a,b,c]
 
 }
-let tor = add();
+
 
 
  
@@ -92,19 +92,24 @@ if (elem.id == "pa3") {
 
 }
 
+let tor = add();
 //https://stackoverflow.com/questions/17114825/how-to-disable-button-after-one-click-with-validation-using-javascript
-/* document.getElementById("sum").onclick = function() {
-
+ let uu = document.getElementById("sum").onclick = function() {
+   
+    if (uu.length > 0) {
+      uu[0].remove();
+    }
     console.log("mmmmmmmmmmmmmmm")
    this.disabled = true;
   
 
-} */
+}  
 
 document.getElementById("subs").addEventListener("click", returnSubs);
 function returnSubs() {
     subs();
   }
+ 
 
 
 
