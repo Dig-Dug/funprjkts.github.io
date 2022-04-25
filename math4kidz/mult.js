@@ -1,16 +1,6 @@
 function mult(){
-    console.log("?$$$$$$$$$$$$$F")
+    console.log("WWQQQ")
 }
-
-
-
-
-
-
-
-
-
-
 
 
 
