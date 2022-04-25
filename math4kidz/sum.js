@@ -30,6 +30,10 @@ let c = document.createElement("h2");
 c.setAttribute("onclick", "yes()");
 c.setAttribute("id", "pa3"); c.setAttribute("value", c.innerHTML = res );
 
+/*  let opt = document.createElement("h2");
+opt.setAttribute("id", "pa4"); opt.setAttribute("value", opt.innerHTML = Math.floor(Math.random() * 10));
+opt.setAttribute("onclick", "no(this)");  */
+
  o = document.getElementById("pa"); 
  if(a.innerHTML > 0 && a.innerHTML < 10){
      o.append(c,a,b) ;
@@ -37,9 +41,15 @@ c.setAttribute("id", "pa3"); c.setAttribute("value", c.innerHTML = res );
      console.log("a.innerHTML > 10")
     o.append(b,a,c) ;
  }//TODO when same result.......
-  else{o.append(b,c,a)}
+/*  else if(a.innerHTML = b.innerHTML||a.innerHTML == c.innerHTML
+    || b.innerHTML == c.innerHTML ){
+    console.log("________________________")
+   o.append(b,a,c) ;
+} */
 
-return[a,b,c]
+else{o.append(b,c,a)}
+
+return[a,b,c, opt]
 
 }
 
@@ -51,6 +61,7 @@ function yes(){
     const el = document.getElementById('pa1'); 
     const ell = document.getElementById('pa2'); 
     const elll = document.getElementById('pa3'); 
+    //const ellll = document.getElementById('pa4'); 
 
     let correct = document.createElement("audio");
     correct.src   = 'correct.mp3';
@@ -59,6 +70,7 @@ function yes(){
     el.remove();
     ell.remove();
     elll.remove();
+    //ellll.remove();
     add();
     const imgo = document.getElementById("nope");
     if(imgo){
@@ -85,7 +97,10 @@ if (elem.id == "pa3") {
 }else if (elem.id == "pa1") {
     console.log("eeeeeeeeeeeeeeeeee");
     r.remove(); error.play();
-}else if (elem.id == "pa2") { 
+}/* else if (elem.id == "pa4") {
+    console.log("eeeeeeeeeeeeeeeeee");
+    r.remove(); error.play();return;
+} */else if (elem.id == "pa2") { 
     r.remove();error.play();
     return
 }
