@@ -1,18 +1,18 @@
-function mult(){
-    console.log("WWQQQ");
+function divide(){
+   
     let  removeIt = document.getElementById("pa");
     removeIt.textContent = '';  
 
     let num1 = document.getElementById('operand1');
     let sign = document.getElementById('sign');
     let num2 = document.getElementById('operand2');
-    sign.innerHTML = '*';
+    sign.innerHTML = '/';
     num1.setAttribute("value", num1.innerHTML = Math.floor(Math.random() * 20));
     num2.setAttribute("value",num2.innerHTML = Math.floor(Math.random() * 20));
   
   let n1 = num1.getAttribute("value");
   let n2 = num2.getAttribute("value");
-  let res = parseInt(n1) * parseInt(n2);
+  let res = parseInt(n1) / parseInt(n2);
   console.log(Math.abs(res));
 
   let a = document.createElement("h2");
@@ -25,7 +25,7 @@ function mult(){
   b.setAttribute("onclick", "no(this)");
   
   let c = document.createElement("h2");
-  c.setAttribute("onclick", "yesMult()");
+  c.setAttribute("onclick", "yesDiv()");
   c.setAttribute("id", "pa3"); c.setAttribute("value", c.innerHTML = Math.abs(res) );
   
 o = document.getElementById("pa"); 
@@ -40,7 +40,7 @@ if(a.innerHTML > 0 && a.innerHTML < 10){
 return[a,b,c]
 }
 
-function yesMult(){
+function yesDiv(){
     
      const el = document.getElementById('pa1'); 
   
@@ -52,7 +52,7 @@ function yesMult(){
   
     el.remove();
     elll.remove();
-    mult();
+    divide();
   
   }
 
