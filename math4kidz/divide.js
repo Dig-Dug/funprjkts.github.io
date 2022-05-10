@@ -13,7 +13,7 @@ function divide(){
   let n1 = num1.getAttribute("value");
   let n2 = num2.getAttribute("value");
   let res = parseInt(n1) / parseInt(n2);
-  console.log(Math.abs(res));
+  console.log(Math.floor(res));
 
   let a = document.createElement("h2");
   a.setAttribute("id", "pa1"); a.setAttribute("value", a.innerHTML = Math.floor(Math.random() * 20));
@@ -26,7 +26,7 @@ function divide(){
   
   let c = document.createElement("h2");
   c.setAttribute("onclick", "yesDiv()");
-  c.setAttribute("id", "pa3"); c.setAttribute("value", c.innerHTML = Math.abs(res) );
+  c.setAttribute("id", "pa3"); c.setAttribute("value", c.innerHTML = Math.floor(res) );
   
 o = document.getElementById("pa"); 
 if(a.innerHTML > 0 && a.innerHTML < 10){

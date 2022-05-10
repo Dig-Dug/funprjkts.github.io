@@ -1,5 +1,16 @@
 function mult(){
-    console.log("WWQQQ");
+//COLOR ISSUE
+let color = document.getElementById("mult");
+color.style.color = "red";
+document.getElementById("sum").onclick = function() {myFunction()};
+document.getElementById("subs").onclick = function() {myFunction()};
+document.getElementById("divide").onclick = function() {myFunction()};
+function myFunction() {
+  color.style.color = "black";
+}
+//COLOR ISSUE
+
+
     let  removeIt = document.getElementById("pa");
     removeIt.textContent = '';  
 

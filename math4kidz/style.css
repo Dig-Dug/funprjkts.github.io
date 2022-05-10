@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono&display=swap');
+@font-face {
+  font-family: '3Dumb';
+  src: url(3Dumb.ttf);
+}
+
 body{
   margin-top: 80px;margin-bottom: 800px;
 }
@@ -26,10 +31,15 @@ label {
   font-family: 'Noto Sans Mono', monospace;
 }
 
-h2{
-  font-family: 'Staatliches', cursive;
+.header{
+  font-size: 40px;position: relative;
+  margin-left: 159px;right: 609px;
+}
+h2{ 
+  font-family: '3Dumb', cursive;
   font-size:18px; cursor: pointer;
-  
+  margin-bottom: 0px;
+  margin-top: 0px; font-size: 57px;
 }
 #pa3{
   
@@ -45,24 +55,37 @@ h2{
   margin-left: 58px;
 }
 h1{
-  font-family: 'Staatliches', cursive;
-  color: #000000; 
+  font-family: '3Dumb'; 
+  color: #000000; font-size: 84px;
+  margin-top: 124px;
 }
+
 p{
   font-family: 'Noto Sans Mono', monospace;
   margin-left: 0px;
   color: rgb(0, 0, 0);
 }
 .operation {
+  position: relative;    right: 175px;
+  bottom: 89px;
+  height: 9px;
+  top: -94px;
+  margin-bottom: 0px;
   display: grid; 
   grid-template-columns: 0.1fr 0.1fr 0.1fr 0.1fr; 
   gap: 0px 10px; 
 }
+#sum{
+  position: relative;padding-left: 75px;
+}
+.headerOperation{
+ font-size: 32px; position: relative;
+}
 .digits {
-  display: grid; 
+  display: grid; margin-right: 85px; 
   grid-template-columns: 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr; 
   grid-template-rows: 1fr; 
-  gap: 0px 0px; 
+  gap: 0px 47px; 
   grid-template-areas: 
     ". . . . ."; 
 }
@@ -70,11 +93,12 @@ p{
   display: grid; 
   grid-auto-columns: 1fr; 
   grid-template-rows: 1fr 1fr 1fr; 
-  gap: 0px 0px; 
+  gap: 0px 0px; margin-left: 40px;
 }
 .all{
-  display: grid; 
-  grid-auto-columns: 1fr; 
-  grid-template-columns: 0.4fr 0fr; 
-  gap: 0px 0px; 
+  display: grid;
+  grid-template-columns: 1fr 0fr 3fr;
+  grid-auto-columns: 1fr;
+  /* grid-template-columns: 0.4fr 0fr; */
+  gap: 0px 50px;
 }
