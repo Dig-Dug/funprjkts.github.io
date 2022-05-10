@@ -1,10 +1,5 @@
 function mult(){
 //COLOR ISSUE
-let color = document.getElementById("mult");
-color.style.color = "red";
-document.getElementById("sum").onclick = function() {color.style.color = "black";};
-document.getElementById("subs").onclick = function() {color.style.color = "black";};
-document.getElementById("divide").onclick = function() {color.style.color = "black";}
 //COLOR ISSUE
 
 
