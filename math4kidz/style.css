@@ -31,19 +31,25 @@ label {
   font-family: 'Noto Sans Mono', monospace;
 }
 
-.header{
+.header{color: coral;
   font-size: 40px;position: relative;
   margin-left: 159px;right: 609px;
+}
+.table{
+  background-color: #e5db29; border-radius: 19px;
+  padding: 10px;
+  box-shadow: 5px 10px 18px rgb(0, 0, 0);
 }
 h2{ 
   font-family: '3Dumb', cursive;
   font-size:18px; cursor: pointer;
   margin-bottom: 0px;
   margin-top: 0px; font-size: 57px;
+  
 }
 #pa3{
   
-  color: red;
+ /*  color: red; */
 }
 #pa3a{
   margin-left: 58px;
@@ -57,7 +63,7 @@ h2{
 h1{
   font-family: '3Dumb'; 
   color: #000000; font-size: 84px;
-  margin-top: 124px;
+  margin-top: 53px;
 }
 
 p{
@@ -75,13 +81,16 @@ p{
   grid-template-columns: 0.1fr 0.1fr 0.1fr 0.1fr; 
   gap: 0px 10px; 
 }
+h2:hover{
+  color: red;
+}
 #sum{
   position: relative;padding-left: 75px;
 }
 .headerOperation{
  font-size: 32px; position: relative;
 }
-.digits {
+.digits {margin-left: 41px;
   display: grid; margin-right: 85px; 
   grid-template-columns: 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr; 
   grid-template-rows: 1fr; 
