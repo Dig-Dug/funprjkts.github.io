@@ -1,6 +1,20 @@
 
 function subs(){
-  /* let r = document.getElementById("pa3"); r.remove(); */
+   //COLOR ISSUE
+   let color = document.getElementById("subs");
+   color.style.color = "red";
+   document.getElementById("sum").onclick = function() {myFunction()};
+   document.getElementById("mult").onclick = function() {
+    color.style.color = "black";
+    mult()};
+  document.getElementById("division").onclick = function() {
+    color.style.color = "black";
+    divide()}; 
+   function myFunction() {
+     color.style.color = "black";
+    
+   }
+   //COLOR ISSUE
   let  removeSum = document.getElementById("pa");
   removeSum.textContent = '';  
 
