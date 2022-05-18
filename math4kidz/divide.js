@@ -1,6 +1,5 @@
 function divide(){
-//COLOR ISSUE
-//COLOR ISSUE
+
 
     let  removeIt = document.getElementById("pa");
     removeIt.textContent = '';  

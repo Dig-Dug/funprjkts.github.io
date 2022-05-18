@@ -1,6 +1,4 @@
 function mult(){
-//COLOR ISSUE
-//COLOR ISSUE
 
 
     let  removeIt = document.getElementById("pa");

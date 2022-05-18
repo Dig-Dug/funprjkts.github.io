@@ -1,8 +1,6 @@
 
 function subs(){
-   //COLOR ISSUE
-
-   //COLOR ISSUE
+   
   let  removeSum = document.getElementById("pa");
   removeSum.textContent = '';  
 

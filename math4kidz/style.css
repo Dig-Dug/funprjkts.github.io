@@ -6,7 +6,7 @@
 }
 
 body{
-  margin-top: 80px;margin-bottom: 800px;
+  margin-top: 80px;margin-bottom: 800px;background-color: blanchedalmond;
 }
 #nope{
   position: relative;bottom: 165px; left: 138px;
@@ -45,11 +45,26 @@ h2{
   font-size:18px; cursor: pointer;
   margin-bottom: 0px;
   margin-top: 0px; font-size: 57px;
-  
+ 
+}
+#pa1{
+  background-color: darkcyan;padding-left: 27px;padding-right: 14px; border-radius: 19px;
+}
+
+#pa2{
+  background-color: darkcyan;padding-left: 27px;padding-right: 14px; border-radius: 19px;
 }
 #pa3{
-  
- /*  color: red; */
+  background-color: darkcyan;padding-left: 27px;padding-right: 14px; border-radius: 19px;
+}
+#pa1:hover{ color: aliceblue;
+  background-color: #008b8b57;
+}
+#pa2:hover{color: aliceblue;
+  background-color: #008b8b57;
+}
+#pa3:hover{color: aliceblue;
+  background-color: #008b8b57;
 }
 #pa3a{
   margin-left: 58px;
@@ -98,12 +113,13 @@ h2:hover{
   grid-template-areas: 
     ". . . . ."; 
 }
-.possibleAnswers{
+.possibleAnswers{margin-right: 1473px;
   display: grid; 
   grid-auto-columns: 1fr; 
   grid-template-rows: 1fr 1fr 1fr; 
-  gap: 0px 0px; margin-left: 40px;
+  gap: 8px 0px; margin-left: 40px;
 }
+
 .all{
   display: grid;
   grid-template-columns: 1fr 0fr 3fr;

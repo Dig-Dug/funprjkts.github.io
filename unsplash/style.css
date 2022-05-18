@@ -1,0 +1,32 @@
+
+
+body{
+  margin-top: 80px;margin-bottom: 800px;background-color: blanchedalmond;
+}
+.topGrid {
+  display: grid; 
+  grid-template-columns: 2fr 12fr 56fr; 
+  grid-template-rows: 1fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    ". . ."; 
+}
+
+#back{
+  font-family: 'Staatliches', cursive;
+    color: rgb(255, 0, 0);
+    margin: auto;
+    margin-top: 60px;
+  width: 88px;
+  margin-left: 0px;
+  padding: 10px;
+}
+
+.in{
+  margin-top: 23px;
+    margin-left: 16px;
+}
+.sorch{
+  width: 59px;
+    height: 23px;
+}
