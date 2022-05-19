@@ -1,7 +1,7 @@
 
   
        // fetch('http://example.com/movies.json')
-        async function sorch() {
+     /*    async function sorch() {
             try {
                 const response = await fetch('https://json.org/example.html', {
                   method: 'GET',
@@ -20,6 +20,6 @@
                 console.log(err, "wwww");
               }
             }
-            
+             */
            // sorch();
     
