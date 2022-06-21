@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
 
 body{
@@ -11,7 +15,9 @@ body{
   grid-template-areas: 
     ". . ."; 
 }
-
+h2 {
+  font-family: 'Staatliches', cursive; margin-left: 15px;
+}
 #back{
   font-family: 'Staatliches', cursive;
     color: rgb(255, 0, 0);
