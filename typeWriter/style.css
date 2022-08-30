@@ -7,64 +7,7 @@ body {
   background-size: 1042px 842px;
   margin-bottom: 800px;
   /* overflow-y: hidden;*/
-  background-color: bisque;
-}
-.frstTwo {
-  display: grid; 
-  grid-template-columns: 1fr 2fr; 
-  gap: 0px 0px; 
-}
-.need{
-  width: 241px;
-  height: 21px;
-  border: 1px solid lightgray;
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
-}
-.need1{
-  position: relative;right: 6px;
-  
-  width: 88px;
-  height: 25px;
-  background-color: lightgray;
-  border: 1px solid lightgray;
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
-}
-.paper{
-  position: relative;
-  width: 431px;left: 301px;
-  height: 35px;
-   background: #ff000073;
-}
-.paper:hover{
-  box-shadow: 0 0 20px #ff000073;
-  
-}
-
-
-
-.writing{
-  position:relative;
-  font-family: 'Staatliches', cursive;
-  font-size: 21px;
-  left: 312px;
-  color: white;
-  bottom: 30px;
-}
-.checkbox{
-  position: relative;left: 670px;
-  bottom: 48px;
-}
-/*https://stackoverflow.com/questions/24322599/why-cannot-change-checkbox-color-whatever-i-do*/
-[type=checkbox]{
-  transform: scale(1.5);
-}
-.fa-trash:before{
-  position: relative;
-  left: 688px;
-  bottom: 48px;
-  color: cornsilk;
+  background-image: url("a.webp");;
 }
 
 #back {
@@ -88,16 +31,7 @@ body {
   align-items: start;
 }
 
-#flashcards {
-  /*  display: flex; */
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  width: 100%;
-  margin: auto;
-  margin-top: 10px;
-  padding: 0px 10px;
-}
+
 
 h2 {
   font-family: 'Staatliches', cursive;
@@ -109,28 +43,7 @@ h2 {
   letter-spacing: 5px;
 }
 
-.showCard {
-  position: relative;
-  height: 200px;
-  margin: 20px;
-  width: 646px;
-  background-color: #e9ff00;
-  border-radius: 25px;
 
-}
-
-.titel {
-  position: relative;
-  color: deeppink;
-  bottom: 205px;
-  left: 93px;
-}
-
-.showCardInput {
-  position: relative;
-  bottom: 201px;
-  left: 95px;
-}
 
 h1 {
   font-family: 'Press Start 2P', cursive;
@@ -140,27 +53,20 @@ h1 {
   bottom: 24px;
 }
 
-.btn1 {
-  position: relative;
-  bottom: 160px;
-  left: -223px;
-  right: 19px;
-  font-family: 'Staatliches', cursive;
-  font-size: 18px;
-  color: #ff62b2;
-  border: none;
-  border-radius: 5px;
-  width: 106px;
-  height: 29px;
 
-}
 
 p {
+  color: aliceblue;
   font-family: 'Staatliches', cursive;
   font-size: 21px;
-  margin-top: 0px;
-  margin-left: 0px;
-  color: rgb(0, 0, 0);
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em;
+  animation: 
+  typing 3.5s steps(40, end),
+  blink-caret .75s step-end infinite;
 }
 
 
@@ -175,17 +81,7 @@ p {
 
 }
 
-.numBtn {
-  margin-bottom: 4px;
-  border-radius: 5px;
-  border: none;
-  width: 39px;
-  height: 27px;
-}
 
-.numBtn:hover {
-  background-color: #e28437da;
-}
 
 .btn:hover {
   background-color: black;
@@ -196,31 +92,15 @@ p {
 }
 
 
-/*////////////////////////////////////////////////////**/
-#questionRev {
-  position: relative;
-  font-family: 'Staatliches', cursive;
-  color: rgb(0, 0, 0);
-  bottom: 173px;
-  left: 38px;
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
 }
 
-#flashRev {
-  position: relative;
-  height: 200px;
-  width: 262px;
-  margin: 20px;
-  background-color: rgb(237 56 56 / 37%);
-  border-radius: 25px;
-}
-
-#answerRev {
-  position: relative;
-  font-family: 'Staatliches', cursive;
-  color: white;
-  bottom: 181px;
-  font-family: 'Source Serif Pro', serif;
-  font-size: 17px;
-  left: 38px;
-
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
 }
