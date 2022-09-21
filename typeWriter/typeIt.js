@@ -16,18 +16,21 @@ let typeIt = () => {
     //console.log(data[0],"wwww");
    
    let ran =  Math.floor(Math.random() * 200);
-   console.log(ran);
+   
   
    let u;
 
 
   u = JSON.stringify(data[ran],null, 4);
-
+  let tt = u.replace(/[{}]/g,''); //Remove curly braces
+  let p = tt.replace('"text": ', ' ') //remove "text" from fetch
+ console.log(p)
    for(let i = 0; i < 2; i++){
     let r  = document.createElement('p');
     r.setAttribute('id','writer');
-    r.innerHTML = u;
+    r.innerHTML = p;
     let z = document.getElementById('quote').appendChild(r);
+    //console.log(z)
     return;
  }
  }

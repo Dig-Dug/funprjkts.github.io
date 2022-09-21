@@ -7,7 +7,10 @@ body {
   background-size: 1042px 842px;
   margin-bottom: 800px;
   /* overflow-y: hidden;*/
-  background-image: url("a.webp");;
+  background-image: url("a.webp");
+  
+
+
 }
 
 #back {
@@ -15,10 +18,10 @@ body {
   font-family: 'Staatliches', cursive;
   color: rgb(255, 255, 255);
   margin: auto;
-  width: 88px;
+  width: 88px; position: sticky;
   border: none;
-  margin-top: 67px;
-  margin-left: 132px;
+  margin-top: 85px;
+    margin-left: 638px;
   padding: 10px;
 }
 
@@ -60,13 +63,27 @@ p {
   font-family: 'Staatliches', cursive;
   font-size: 21px;
   overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .15em solid orange; /* The typwriter cursor */
+  /*border-right: .15em solid orange; */ /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
   letter-spacing: .15em;
   animation: 
   typing 3.5s steps(40, end),
   blink-caret .75s step-end infinite;
+}
+#quote{
+ 
+  position: relative;
+  left: 293px
+}
+#writer{
+  position: relative;
+  
+  margin-top: 152px;
+  
+  /* width: 2568px;
+   */
+
 }
 
 
@@ -78,7 +95,7 @@ p {
   border-radius: 5px;
   width: 123px;
   height: 38px;
-
+  
 }
 
 
