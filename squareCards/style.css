@@ -2,16 +2,51 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab&display=swap');
+
 body {
   margin-top: 80px;
   background-size: 1042px 842px;
-  margin-bottom: 800px;width: 2466px;
-  /* overflow-y: hidden;*/
-  background-image: url("a.webp");
+  margin-bottom: 800px;height: 190px;
+   overflow-y: hidden;
+  background-image: url("0rqcbC.webp");
   background-size:cover
 
 
 }
+
+
+.container {  
+  position: relative;
+  margin-top: 24px;
+  width: 1420px;
+  height: 727px;left: 192px;top: 37px;
+
+
+  display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-template-rows: repeat(2, 1fr);
+grid-column-gap: 0px;
+grid-row-gap: 0px;
+
+      
+}
+.box{
+  
+}
+.shodow{
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px 13px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  transition: transform 2s;
+}
+.shodow:hover{
+  transform: scale(1.1);
+}
+ p{
+  font-family: 'Zilla Slab', serif;
+  color: white;justify-content: center;
+ } 
+
+
 
 #back {
   background: rgb(255, 1, 1);
@@ -20,8 +55,8 @@ body {
   margin: auto;
   width: 88px; position: sticky;
   border: none;
-  margin-top: 85px;
-    margin-left: 638px;
+  margin-top: 20px;
+    margin-left: 191px;
   padding: 10px;
 }
 
@@ -58,34 +93,6 @@ h1 {
 
 
 
-p {
-  color: aliceblue;
-  font-family: 'Staatliches', cursive;
-  font-size: 21px;
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  /*border-right: .15em solid orange; */ /* The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: .15em;
-  animation: 
-  typing 3.5s steps(40, end),
-  blink-caret .75s step-end infinite;
-}
-#quote{
- 
-  position: relative;
-  left: 293px
-}
-#writer{
-  position: relative;
-  
-  margin-top: 152px;
-  
-  /* width: 2568px;
-   */
-
-}
-
 
 .btn {
   font-family: 'Staatliches', cursive;
@@ -109,15 +116,3 @@ p {
 }
 
 
-
-/* The typing effect */
-@keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
-}
-
-/* The typewriter cursor effect */
-@keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: orange; }
-}
