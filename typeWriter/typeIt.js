@@ -1,6 +1,9 @@
 
 window.addEventListener('load', (e) =>{
-    show();
+  console.log("again")
+   show();
+
+   // return e;
 })
 
 
@@ -10,49 +13,45 @@ let typeIt = () => {
   return response.json();
   })
   .then(function(data) {
-    console.log(data[0]);
+    //console.log(data[0],"wwww");
    
    let ran =  Math.floor(Math.random() * 200);
    console.log(ran);
-   //JSON.stringify(theObject)
-   let u = []
-    u = JSON.stringify(data[ran]);
-    
+  
+   let u;
+
+
+  u = JSON.stringify(data[ran],null, 4);
+
    for(let i = 0; i < 2; i++){
     let r  = document.createElement('p');
-    //r.setAttribute('class','writer');
+    r.setAttribute('id','writer');
     r.innerHTML = u;
     let z = document.getElementById('quote').appendChild(r);
     return;
  }
  }
-  );
+  ); 
+  setTimeout(removeNode, 8000)
+  setTimeout(show, 10000)
+ 
+}
+
+let removeNode = () => {
+  let d = document.getElementById("quote");
+  let d_nested = document.getElementById("writer");
+  let throwawayNode = d.removeChild(d_nested);
+  return throwawayNode;
 }
 
 
 function show(){
-
-/*  let st = 'Lorem ipsum typing effect!'
-    let s = 0, speed = 50;
-    if(s < st.length){
-
-        let r = document.createElement('p');
-        z = document.getElementById("quote").appendChild(r);
-        z.innerHTML += st.charAt(s); s+=1;
-       // setTimeout(show, speed)
-        
-        for(let i = 0; i < 1; i++){
-        console.log(typeIt(i))
-      return
-    }return 
-*/
-
-  let r = document.createElement('p');
+    let r = document.createElement('p');
     z = document.getElementById("quote").appendChild(r);
     for(let i = 0; i < 1; i++){
     console.log(typeIt(i))
     }
 
-  }
+}
 
 
