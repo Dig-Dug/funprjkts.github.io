@@ -1,159 +1,78 @@
 @import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: Gotham Rounded, sans-serif;
+  font-weight: normal;
+}
+
 body {
- margin-top: 80px;
-  margin-bottom: 800px;
- /* overflow-y: hidden;*/
- background-color: bisque;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right, #CBCE91FF, #EA738DFF);
+}
+
+.calculator-grid {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  min-height: 100vh;
+  grid-template-columns: repeat(4, 100px);
+  grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+}
+
+.calculator-grid>button {
+  cursor: pointer;
+  font-size: 2rem;
+  border: 1px, solid #FFFFFF;
+  outline: none;
+}
+
+.calculator-grid>button:hover {
+  background-color: #a9a9a9;
+}
+
+.span-two {
+  grid-column: span 2;
+  color: #adf802;
+  background-color: rgba(139, 0, 139, 0.8);
+}
+
+.output {
+  grid-column: 1 / -1;
+  background-color: rgba(0, 0, 0, 0.75);
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  flex-direction: column;
+  padding: 10px;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+.output .previous-operand {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 1.5rem;
 }
 
 #back {
-  background: rgb(255, 1, 1);
   font-family: 'Staatliches', cursive;
-  color: rgb(255, 255, 255);
+  color: rgb(255, 0, 0);
   margin: auto;
+  margin-top: 60px;
   width: 88px;
-  border: none;
-  margin-top: 67px;
-    margin-left: 132px;
+  margin-left: 0px;
   padding: 10px;
 }
-textarea {
-  resize: none;
-}
 
-#totall{
-  background-color: bisque;
-  position: relative;
-    margin-top: 0px;
-    margin-bottom: 11px
-px
-;
-    bottom: 70px;
+.output .current-operand {
+  color: white;
+  font-size: 2.5rem;
 }
-h2 {
-  font-family: 'Staatliches', cursive;
-  font-size: 75px;
-  margin-left: 83px;
-  width: 831px;
-  height: 78px;
-  padding-bottom: 14px;
-  letter-spacing: 5px;
-}
-#in{
-  border-radius: 8px;
-  margin-top: 17px;
-  margin-left: 13px;
-}
-#erase{
-  border-radius: 8px;
-  margin-top: 17px;
-  margin-left: 13px;
-}
-.grud {
-
-  height: 194px;
-    width: 601px;
-    margin-left: 15px;
-    margin-top: 15px;
-    border-bottom-width: 16px;
-    margin-bottom: 19px;
-    margin-right: 29px;
-
-  display: grid; 
-  grid-template-columns: 1fr 1fr 1fr 1fr; 
-  grid-template-rows: 2fr 2fr 2fr 2fr; 
-  gap: 18px 22px; 
-  grid-template-areas: 
-    ". . . ."
-    ". . . ."
-    ". . . ."
-    ". . . ."; 
-}
-
-h1 {
-  font-family: 'Staatliches', cursive;
-  margin-left:  186px;
-  color: #000000;
-}
-
-#border{
-  background-color: #788ae3 ;
-  height: 329px;width: 365px;
-  border-radius: 5px;
-  position: relative;
-  border-color: #000000;
-  margin-left: 129px;
-    margin-right: 118px;
-    margin-top: 40px;
-}
-#border:before  {
-  content: '';
-  position: absolute;
-  top: 0; right: 0;
-  border-top: 42px solid bisque;
-  border-left: 42px solid red;
-  width: 0;
-}
-
-p {
-  font-family: 'Staatliches', cursive;
-  font-size: 21px;
-  margin-top: 0px;
-    margin-left: 0px;
-  color: rgb(0, 0, 0);
-}
-
-#equal{
-  background-color: skyblue;
-  width: 588px;
-  border: none;
-  margin-left: 13px;
-}
-.btnsDiv{
-  display: grid; 
-  grid-template-columns: 1fr 1fr; 
-  grid-template-rows: 1fr 1fr; 
-  gap: 3px 5px; 
-  grid-template-areas: 
-    ". ."
-    ". ."; 
-}
-.btn{
-  font-family: 'Staatliches', cursive;
-  font-size: 21px;
-  border: none;
-  border-radius: 5px;
-  width: 67px;
-  
-}
-.numbers {
-  display: grid; 
-  grid-template-columns: 1fr 1fr 1fr; 
-  grid-template-rows: 1fr 1fr 1fr 1fr; 
-  gap: 0px 0px; 
-  grid-template-areas: 
-    ". . ."
-    ". . ."
-    ". . ."
-    ". . ."; 
-}
-.numBtn{
-  margin-bottom: 4px;
-  border-radius: 5px;border: none;
-  width: 39px;
-  height: 27px;
-}
-.numBtn:hover{
-  background-color: #e28437da;
-}
-.btn:hover{
-  background-color: #e28437da;
-}
-#equal:hover{
-  background-color: #e28437da;
-}
-
-
-
-

@@ -9,113 +9,35 @@
   <link rel="shortcut icon" type="image/jpg" href="x.jpg" />
 <script src="calculator1.js" defer></script>
   <!-- <script src="c.js" defer></script> -->
-
-   
-   
 </head>
 <body>
- 
-   <h1 >Calculator 😂 <p>TODO!!!</p></h1>
-   
-  
-   <img>
-<div id="border" class="borderr">
- 
-
-   
-    <input name="num1" type="text" id="num1"> 
-    <input type="text" id="num2"> 
-    <p id="numo"></p>
- 
-<div id="grey"class="grud">
-
-<div class="numbers">
- <div >
- <!--  <button id="numT" class="numBtn" type="submit"  value="1">1</button>
-  <input id="in" type="button" class="btn" onclick="input(this);" value="1"> -->
- <!--  <input id="num1" class="numBtn"  value="1" type="tel"/> -->
- <input id="numT" class="numBtn"  name="one" value="1" type="button" />
-</div>
- <div>
-  <input id="numT"class="numBtn"type="button" value="2">
- </div>
- <div class="numBtn">
-  <button id="numT"class="numBtn" type="submit">3</button>
- </div>
- <div class="numBtn">
-  <button id="numT"class="numBtn" type="submit">4</button>
- </div>
- <div class="numBtn">
-  <button id="numT"class="numBtn" type="submit">5</button>
- </div>
- <div class="numBtn">
-  <button id="numT"class="numBtn" type="submit">6</button>
- </div>
- <div class="numBtn">
-  <button id="numT"class="numBtn" type="submit">7</button>
- </div>
- <div class="numBtn">
-  <button id="numT"class="numBtn" type="submit">8</button>
- </div>
- <div class="numBtn">
-  <button id="numT"class="numBtn" type="submit">9</button>
- </div> 
- <div class="numBtn">
-    <button class="numBtn"type="submit">.</button>
- </div> 
- <div class="numBtn">
-  <button id="numT"type="submit" class="numBtn" >0</button> 
- </div> 
- <div class="numBtn">
-  
-  <button type="button" class="numBtn" value="C" onclick="reset()">C</button> 
- </div>
-
-<!--  
-https://stackoverflow.com/questions/50748153/basic-calculator-how-to-make-buttons-input-value-to-text-field -->
-
-
- </div>
- 
- <div class="btnsDiv">
-<div>  <button id="suma" class="btn" type="submit" onClick="sume()">+</button></div>
-<div>  <button id="rest" class="btn" type="submit" onClick="rest()">-</button> </div>
-<div>  <button id="mult" class="btn" type="submit" onClick="mult()">*</button></div>
-<div>  <button id="div" class="btn" type="submit" onClick="div()">/</button></div>
+<div class="calculator-grid">
+<div class="output">
+  <div data-previous-operand class="previous-operand"></div>
+  <div data-current-operand class="current-operand"></div>
+  </div>
+<button data-all-clear class="span-two">AC</button>
+  <button data-delete>DEL</button>
+  <button data-operation>÷</button>
+  <button data-number>1</button>
+  <button data-number>2</button>
+  <button data-number>3</button>
+  <button data-operation>*</button>
+  <button data-number>4</button>
+  <button data-number>5</button>
+  <button data-number>6</button>
+  <button data-operation>+</button>
+  <button data-number>7</button>
+  <button data-number>8</button>
+  <button data-number>9</button>
+  <button data-operation>-</button>
+  <button data-number>.</button>
+  <button data-number>0</button>
+  <button data-equals class="span-two">=</button>
+  <button id="back" onclick="document.location='../index.html'">back</button>
 </div>
 
+<body/>
  
- <script>
- var buttons = document.querySelectorAll('input[type="button"');
- var input = document.getElementById('num1');
  
-
-
-  for (var i = 0; i < buttons.length; i++) {
-   buttons[i].addEventListener('click', function() { 
-     input.value += this.value;
-   });
- } console.log(input)
-
-</script> 
-
-
-
-
-
-</div>
-<!-- <button id="in" onkeydown = "if (event.keyCode == 13)
-document.getElementById('in')"  type="button"  class="btn" value="0"  onclick="showResult()">=</button> 
- -->
-
-<div id="totall"> 
-
-</div>
-
-
-</div>
-<div>
-    <button id="back" onclick="document.location='../index.html'">back</button>
- </div>
-</body>
 </html>
